@@ -2,20 +2,62 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+* {
+    scroll-behavior: smooth;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+@layer components {
+    .bg-gradient-to-b-from-transparent {
+        background-image: linear-gradient(180deg, #00A1E9 38.35%, #F5F5F5 97.85%);
+
+    }
+
+    .blur-custom {
+        filter: blur(100px);
+    }
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+
+/* .swiper {
+    width: 100%;
+    height: 100%;
+} */
+
+/* .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+} */
+
+.swiper-pagination {
+    bottom: 50px !important;
+    margin-left: -35px;
+
+    @media (max-width:1024px) {
+        bottom: initial;
+        margin-left: initial;
+    }
+}
+
+.swiper-pagination-bullet {
+    width: 15px !important;
+    height: 15px !important;
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    width: 100% !important;
+    /* Center slide text vertically */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    object-fit: contain;
 }
