@@ -1,11 +1,13 @@
 "use client";
-
+import { useState } from "react";
 import { Navbar, NavbarBrand, NavbarContent, NavbarItem, NavbarMenuToggle, NavbarMenu, NavbarMenuItem } from "@nextui-org/react";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import { Image } from "@nextui-org/react";
 
 const Header: React.FC = () => {
+
+    const [isMenuOpen, setIsMenuOpen] = useState(false);
 
     const navItems = [
         { id: 1, name: "STORY", href: "#story" },
@@ -18,10 +20,16 @@ const Header: React.FC = () => {
     ];
 
     return (
-        <Navbar isBordered maxWidth="full" className="bg-[#00A1E9] h-24 px-6">
+        <Navbar
+            isBordered
+            maxWidth="full"
+            className="bg-[#00A1E9] h-24 px-6"
+            isMenuOpen={isMenuOpen}
+            onMenuOpenChange={setIsMenuOpen}
+        >
 
             {/* logo */}
-            <NavbarContent justify="center">
+            <NavbarContent justify="center" onClick={() => { setIsMenuOpen(false) }}>
                 <NavbarBrand className="flex items-center justify-center">
                     <Link href="/" className="flex items-center">
                         <Image src="/images/bonzuttner-logo.png" alt="BonZuttner" />
@@ -59,7 +67,7 @@ const Header: React.FC = () => {
             {/* mobile menu*/}
             <NavbarMenu className="pt-28 overflow-hidden">
                 {navItems.map(item => (
-                    <NavbarMenuItem key={item.id}>
+                    <NavbarMenuItem key={item.id} onClick={() => { setIsMenuOpen(prev => !prev) }}>
                         <Link
                             className="w-full flex items-center text-lg font-semibold text-[#00A1E9] py-4"
                             href={item.href}
