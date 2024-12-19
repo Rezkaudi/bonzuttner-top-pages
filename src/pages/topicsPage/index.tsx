@@ -1,10 +1,10 @@
 'use client';
 import React, { useState } from 'react';
-import { Button } from '@nextui-org/react';
-import Container from '@/shared-components/Container';
+// import { Button } from '@nextui-org/react';
+// import Container from '@/shared-components/Container';
 import Image from 'next/image';
 
-const index = () => {
+const Index = () => {
   const [selectedTopic, setSelectedTopic] = useState('all');
   const renderTab = (selected: string) => {
     return (
@@ -160,4 +160,4 @@ const index = () => {
   );
 };
 
-export default index;
+export default Index;
