@@ -7,8 +7,8 @@ import Line from "./components/Line";
 
 const Service = () => {
     return (
-        <section className="bg-[#F5F5F5] py-24 lg:min-h-[500px]" id="service">
-            <Container>
+        <section className="bg-[#F5F5F5] lg:min-h-[500px]" id="service">
+            <Container className="py-40">
                 <div className="flex items-center justify-between w-full lg:flex-row flex-col gap-y-10">
                     <div className="lg:flex-1 w-full">
                         <h2 className="font-medium text-5xl">OUR SERVICE</h2>

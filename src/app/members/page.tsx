@@ -1,4 +1,4 @@
-import Members from '@/pages/members/Members'
+import Members from '@/all-pages/members'
 
 export default function MembersPage() {
     return (

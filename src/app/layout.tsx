@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
-import localFont from "next/font/local";
+import { Noto_Sans_JP } from 'next/font/google'
+
 
 import { Providers } from "./providers";
 import "./globals.css";
@@ -9,17 +10,11 @@ import Footer from "@/shared-sections/Footer";
 
 // opengraph-image.png
 
-const geistSans = localFont({
-  src: "./fonts/GeistVF.woff",
-  variable: "--font-geist-sans",
-  weight: "100 900",
-});
+const noto = Noto_Sans_JP({
+  weight: ['400', '500', '600', '700', '900'],
+  subsets: ['latin'],
+})
 
-const geistMono = localFont({
-  src: "./fonts/GeistMonoVF.woff",
-  variable: "--font-geist-mono",
-  weight: "100 900",
-});
 
 export const metadata: Metadata = {
   title: {
@@ -37,7 +32,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable}`}
+        className={noto.className}
       >
         <Providers>
           <Header />

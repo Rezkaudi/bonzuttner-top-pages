@@ -11,12 +11,12 @@ const Header: React.FC = () => {
 
     const navItems = [
         { id: 1, name: "STORY", href: "/story" },
-        { id: 2, name: "SERVICE", href: "#service" },
+        { id: 2, name: "SERVICE", href: "/#service" },
         { id: 3, name: "WORKS", href: "#works" },
-        { id: 4, name: "RECRUIT", href: "#recruit" },
+        { id: 4, name: "RECRUIT", href: "/recruit" },
         { id: 5, name: "MEMBER", href: "/members" },
-        { id: 6, name: "COMPANY", href: "#company" },
-        { id: 7, name: "CONTACT", href: "#contact" },
+        { id: 6, name: "COMPANY", href: "/company" },
+        { id: 7, name: "CONTACT", href: "/contact" },
     ];
 
     return (

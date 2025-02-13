@@ -1,4 +1,4 @@
-import Story from '@/pages/story/Story'
+import Story from '@/all-pages/story'
 
 export default function StoryPage() {
     return (

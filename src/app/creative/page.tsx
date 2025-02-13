@@ -1,4 +1,4 @@
-import CreativePage from '@/pages/creativePage';
+import CreativePage from '@/all-pages/creativePage';
 export default function Creative() {
   return (
     <main>

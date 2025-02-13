@@ -1,4 +1,4 @@
-import PageNotFound from "@/pages/404";
+import PageNotFound from "@/all-pages/404";
 
 const NotFound = () => <PageNotFound />
 
