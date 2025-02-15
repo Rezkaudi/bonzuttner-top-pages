@@ -30,6 +30,7 @@ const Footer: React.FC = () => {
                             <Link href={'/story'} className="font-medium block">STORY</Link>
                         </div>
 
+
                         <div className='w-[200px] space-y-5'>
                             <div>
                                 <Link href={'/#service'} className="font-medium block mb-2">SERVICE</Link>
