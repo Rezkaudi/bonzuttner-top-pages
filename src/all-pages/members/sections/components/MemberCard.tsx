@@ -27,7 +27,7 @@ const MemberCard: React.FC<IMemberCard> = ({ data }) => {
 
                 <div className="w-full flex items-center justify-between border-l-2 border-[#00A1E9]">
                     <div className=" space-y-2 pl-7">
-                        <span className="text-lg font-normal">{data?.work}</span>
+                        <span className="text-lg font-normal">{data?.mainWork}</span>
                         <h2 className="text-xl font-medium">{data?.name}</h2>
                     </div>
                     <Image src={"/images/arrow.svg"} alt={"arrow"} width={23} height={23} />
@@ -69,7 +69,7 @@ const MemberCard: React.FC<IMemberCard> = ({ data }) => {
                                     <Image src={data?.imageSrc} alt={data?.name} fill className="object-cover" />
                                 </div>
                                 <div className=" space-y-2 text-center ">
-                                    <span className="text-lg font-normal">{data?.work}</span>
+                                    <span className="text-lg font-normal">{data?.works}</span>
                                     <h2 className="text-xl font-medium">{data?.name}</h2>
                                 </div>
                                 <div className="space-y-7">

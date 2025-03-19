@@ -28,7 +28,7 @@ const Hero = () => {
                             </div>
 
                             <p className="font-medium text-2xl">〜難⺠でも楽しく⽣活できる世界観がこの会社にはある〜</p>
-                            <p className="font-bold">This company has a worldview that even refugees can enjoy l iving in.</p>
+                            <p className="font-bold text-[#A8A8A8] font-Figma-Hand">This company has a worldview that even refugees can enjoy l iving in.</p>
 
                             <div>
                                 {

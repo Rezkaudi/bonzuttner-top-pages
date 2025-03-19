@@ -17,8 +17,8 @@ const Member = () => {
                     </div>
                     <div className="flex-1">
                         <h2 className="font-medium text-4xl">MEMBER</h2>
-                        <p className="font-normal text-base pt-6">この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。</p>
-                        <ReadMoreBtn />
+                        <p className="font-normal text-base pt-6">BonZuttnerは、多様な背景を持つメンバーと共に、より良い社会を目指していくために日々精進しております。日本人やシリアにルーツを持つ仲間たちが揃っており、私たちのメンバー一人ひとりが、経験、文化、価値観を共有しながら新しいアイデアを形にしてみなさまにお届けをします。</p>
+                        <ReadMoreBtn href="/members" />
                     </div>
                 </div>
             </Container>

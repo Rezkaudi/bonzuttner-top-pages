@@ -1,11 +1,10 @@
 'use client';
 import React, { useState } from 'react';
-// import { Button } from '@nextui-org/react';
-// import Container from '@/shared-components/Container';
 import Image from 'next/image';
 
 const Index = () => {
   const [selectedTopic, setSelectedTopic] = useState('all');
+
   const renderTab = (selected: string) => {
     return (
       <div className="inline-flex items-center justify-center mr-4">
@@ -18,6 +17,7 @@ const Index = () => {
       </div>
     );
   };
+
   const renderContentTab = () => {
     switch (selectedTopic) {
       case 'all':

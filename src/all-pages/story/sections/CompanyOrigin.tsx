@@ -3,6 +3,7 @@
 import Container from "@/shared-components/Container";
 import { Button } from "@nextui-org/react";
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 const CompanyOrigin = () => {
@@ -38,7 +39,7 @@ const CompanyOrigin = () => {
                             {p3.split("\n").map((item, index) =>
                                 <p key={index} className="text-base font-normal">{item}</p>
                             )}
-                            <Button className="text-white bg-[#00A1E9] px-6">COMPANY</Button>
+                            <Button as={Link} href="/company" className="text-white bg-[#00A1E9] px-6">COMPANY</Button>
                         </div>
                     </div>
 

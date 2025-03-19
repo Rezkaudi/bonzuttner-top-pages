@@ -1,4 +1,5 @@
 'use client';
+
 import React from 'react';
 import { Button } from '@nextui-org/react';
 import Container from '@/shared-components/Container';
@@ -131,10 +132,10 @@ const index = () => {
         <div className="flex flex-1 justify-between gap-2.5 mt-6 flex-wrap">
           <div className="text-left lg:w-[22%]">
             <h3 className="bg-white text-[20px] font-medium mb-4 text-center py-3">{`STEP01`}</h3>
-            <p className="text-[20px] font-medium text-center mb-3 leading-7">
+            <p className="text-[20px] font-medium text-center mb-3 text-white leading-7">
               ヒアリング・お見積
             </p>
-            <p className="text-base font-normal pr-2 leading-6">
+            <p className="text-base text-white font-normal pr-2 leading-6">
               目的と実現方法を明文化します。
               <br />
               事業戦略を整理し、Webで解決し得る課題を明確化します。
@@ -142,19 +143,19 @@ const index = () => {
           </div>
           <div className="text-left lg:w-[22%]">
             <h3 className="bg-white text-[20px] font-medium mb-4 text-center py-3">{`STEP02`}</h3>
-            <p className="text-[20px] font-medium text-center mb-3 leading-7">
+            <p className="text-[20px] font-medium text-center mb-3 text-white leading-7">
               戦略設計
             </p>
-            <p className="text-base font-normal pr-2 leading-6">
+            <p className="text-base text-white font-normal pr-2 leading-6">
               コンテンツ、デザインの方向性、サイト構成、機能、ワイヤーフレームなど、戦略を実行する骨組みを設計します。
             </p>
           </div>
           <div className="text-left lg:w-[22%]">
             <h3 className="bg-white text-[20px] font-medium mb-4 text-center py-3">{`STEP03`}</h3>
-            <p className="text-[20px] font-medium text-center mb-3 leading-7">
+            <p className="text-[20px] font-medium text-center mb-3 text-white leading-7">
               デザイン・制作
             </p>
-            <p className="text-base font-normal pr-2 leading-6">
+            <p className="text-base text-white font-normal pr-2 leading-6">
               見た目を完成させ、戦略や設計で定めた方向性に基づき、デザインの作成を行います。
               <br />
               デザイン完成後、実装を行います。制作工程が完了次第、サイトを一般公開します。
@@ -162,10 +163,10 @@ const index = () => {
           </div>
           <div className="text-left lg:w-[22%]">
             <h3 className="bg-white text-[20px] font-medium mb-4 text-center py-3">{`STEP04`}</h3>
-            <p className="text-[20px] font-medium text-center mb-3 leading-7">
+            <p className="text-[20px] font-medium text-center mb-3 text-white leading-7">
               運用
             </p>
-            <p className="text-base font-normal pr-2 leading-6">
+            <p className="text-base text-white font-normal pr-2 leading-6">
               公開後の障害対応は、効果検証や改善施策、追加更新作業、運用担当者へのレクチャーやアドバイス、コンテンツ制作など、効果的な運用などを行わせていただきます。
             </p>
           </div>

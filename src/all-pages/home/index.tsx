@@ -4,8 +4,7 @@ import React from "react";
 import Hero from "./sections/Hero";
 import Story from "./sections/Story";
 import Service from "./sections/Service";
-import Works from "./sections/Works";
-// import Recruit from "./sections/Recruit";
+import Topics from "./sections/Topics";
 import Member from "./sections/Member";
 import Company from "./sections/Company";
 import Contact from "./sections/Contact";
@@ -17,8 +16,7 @@ const index = () => {
             <Hero />
             <Story />
             <Service />
-            <Works />
-            {/* <Recruit /> */}
+            <Topics />
             <Member />
             <Company />
             <Contact />

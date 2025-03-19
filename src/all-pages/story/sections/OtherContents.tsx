@@ -1,6 +1,7 @@
 import Container from "@/shared-components/Container";
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 const OtherContents = () => {
     return (
@@ -15,9 +16,9 @@ const OtherContents = () => {
                             <hr className="w-[20%] border-[#00A1E9] mr-4"></hr>
                             <hr className="w-[75%] border-[#666666]"></hr>
                         </div>
-                        <div className="flex mt-4 justify-between sm:justify-end">
+                        <Link href={"/#service"} className="flex mt-4 justify-between sm:justify-end">
                             <span className="w-full text-left sm:text-center text-[20px] font-medium leading-7">
-                                Artificial Intelligence
+                                OUR SERVICE
                             </span>
                             <Image
                                 src="/images/creative/arrow-right.svg"
@@ -25,16 +26,16 @@ const OtherContents = () => {
                                 width={23}
                                 height={23}
                             />
-                        </div>
+                        </Link>
                     </div>
                     <div className="sm:w-2/5 w-full">
                         <div className="flex">
                             <hr className="w-[20%] border-[#00A1E9] mr-4"></hr>
                             <hr className="w-[75%] border-[#666666]"></hr>
                         </div>
-                        <div className="flex mt-4 justify-between sm:justify-end">
+                        <Link href={"/company"} className="flex mt-4 justify-between sm:justify-end">
                             <span className="w-full text-left sm:text-center  text-[20px] font-medium leading-7">
-                                Internet of Things
+                                COMPANY
                             </span>
                             <Image
                                 src="/images/creative/arrow-right.svg"
@@ -42,7 +43,7 @@ const OtherContents = () => {
                                 width={23}
                                 height={23}
                             />
-                        </div>
+                        </Link>
                     </div>
                 </div>
 

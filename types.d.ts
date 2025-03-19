@@ -1,9 +1,23 @@
 type member = {
     id: string,
-    work: string,
+    mainWork: string,
+    works: string,
     name: string,
     imageSrc: string,
     birthplace: string,
     hobby: string,
     others: string,
+}
+
+type InquiryDataType = {
+    typeOfInquiry: string
+    name: string
+    furigana: string
+    email: string
+    number?: number
+    companyName?: number
+    address?: number
+    inquiryDetails: string
+    agree: boolean
+
 }

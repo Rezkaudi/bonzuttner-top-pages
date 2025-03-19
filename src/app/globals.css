@@ -59,3 +59,9 @@
 .swiper-slide img {
   object-fit: contain;
 }
+
+.menu {
+  height: 100vh !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
