@@ -3,12 +3,12 @@
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import axios from "axios";
-import { useRouter } from "next/navigation"; // Import useRouter
+import { useRouter } from "next/navigation";
 
 const Index: React.FC = () => {
-  const router = useRouter(); // Initialize router
+  const router = useRouter();
   const [selectedTopic, setSelectedTopic] = useState<string>("all");
-  const [articles, setArticles] = useState<{ id: number; publishedAt: string; title: string; category: { name: string }; Body: string }[]>([]);
+  const [articles, setArticles] = useState<{ id: number; publishedAt: string; Title: string; category: { Name: string }; Body: string }[]>([]);
 
   useEffect(() => {
     const fetchArticles = async () => {
@@ -36,16 +36,16 @@ const Index: React.FC = () => {
     </div>
   );
 
-  // Function to navigate to article details
-  const handleArticleClick = (articleId: number) => {
-    router.push(`/topics/article/${articleId}`);
+  // Function to navigate to article details using array index
+  const handleArticleClick = (index: number) => {
+    router.push(`/topics/index/${index}`);
   };
 
   const renderContentTab = () => (
     <div className="relative overflow-x-auto sm:rounded-lg w-[70%] m-auto mb-4">
       <table className="w-full text-sm text-left rtl:text-right">
         <tbody>
-          {articles.map((article) => (
+          {articles.map((article, index) => (
             <tr key={article.id} className="border-t border-black">
               <th scope="row" className="pr-6 py-8 font-medium">
                 <p className="text-sm font-normal leading-5">
@@ -67,7 +67,7 @@ const Index: React.FC = () => {
               <td className="px-6 py-8">
                 <div 
                   className="cursor-pointer" 
-                  onClick={() => handleArticleClick(article.id)}
+                  onClick={() => handleArticleClick(index)}
                 >
                   <Image src="/images/creative/arrow-right.svg" alt="arrow-right" width={23} height={23} />
                 </div>
