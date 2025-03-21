@@ -15,9 +15,24 @@ export async function GET(
       },
     });
 
+    // If the article is not found in the response
+    if (!response.data || !response.data.data) {
+      console.log(`Article with ID ${id} not found in response`, response.data);
+      return NextResponse.json({ error: `Article with ID ${id} not found` }, { status: 404 });
+    }
+
     return NextResponse.json(response.data, { status: 200 });
   } catch (error) {
     console.error(`Error fetching article with ID ${id}:`, error);
-    return NextResponse.json({ error: `Failed to fetch article with ID ${id}` }, { status: 500 });
+    
+    // Check if it's a 404 error from Strapi
+    if (axios.isAxiosError(error) && error.response?.status === 404) {
+      return NextResponse.json({ error: `Article with ID ${id} not found` }, { status: 404 });
+    }
+    
+    return NextResponse.json({ 
+      error: `Failed to fetch article with ID ${id}`,
+      details: axios.isAxiosError(error) ? error.response?.data : null
+    }, { status: 500 });
   }
 }
