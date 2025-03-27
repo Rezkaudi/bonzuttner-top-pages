@@ -8,7 +8,7 @@ import Image from "next/image";
 
 const ArticleDetailsByIndex: React.FC = () => {
   const { index } = useParams();
-  const [articles, setArticles] = useState<any[]>([]);
+  // const [articles, setArticles] = useState<any[]>([]);
   const [article, setArticle] = useState<{
     Title: string;
     Body: string;
@@ -22,14 +22,14 @@ const ArticleDetailsByIndex: React.FC = () => {
       try {
         const response = await axios.get('/api/articles');
         const articlesData = response.data.data;
-        setArticles(articlesData);
-        
+        // setArticles(articlesData);
+
         // Get the article at the specified index
         const articleIndex = parseInt(index as string);
         if (!isNaN(articleIndex) && articleIndex >= 0 && articleIndex < articlesData.length) {
           setArticle(articlesData[articleIndex]);
         }
-        
+
         setLoading(false);
       } catch (error) {
         console.error("Error fetching articles:", error);
@@ -86,17 +86,17 @@ const ArticleDetailsByIndex: React.FC = () => {
       <div className="px-24 py-10">
         <div className="mb-8">
           <Link href="/topics" className="flex items-center text-[#00A1E9]">
-            <Image 
-              src="/images/creative/arrow-right.svg" 
-              alt="arrow-left" 
-              width={23} 
-              height={23} 
+            <Image
+              src="/images/creative/arrow-right.svg"
+              alt="arrow-left"
+              width={23}
+              height={23}
               className="transform rotate-180 mr-2"
             />
             Back to Topics
           </Link>
         </div>
-        
+
         <div className="w-[70%] m-auto">
           <div className="mb-4 flex justify-between items-center">
             <p className="text-xs font-normal border-1 rounded-3xl border-[#00A1E9] py-1 px-6 text-center leading-5 inline-block">
@@ -108,11 +108,11 @@ const ArticleDetailsByIndex: React.FC = () => {
                 : "N/A"}
             </p>
           </div>
-          
+
           <h2 className="text-2xl font-medium mb-6">{article.Title}</h2>
-          
-          <div 
-            className="article-content" 
+
+          <div
+            className="article-content"
             dangerouslySetInnerHTML={{ __html: article.Body }}
           />
         </div>
