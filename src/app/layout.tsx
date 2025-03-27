@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Noto_Sans_JP } from 'next/font/google'
+// import { Noto_Sans_JP } from 'next/font/google'
 
 
 import { Providers } from "./providers";
@@ -10,10 +10,10 @@ import Footer from "@/shared-sections/Footer";
 
 // opengraph-image.png
 
-const noto = Noto_Sans_JP({
-  weight: ['400', '500', '600', '700', '900'],
-  subsets: ['latin'],
-})
+// const noto = Noto_Sans_JP({
+//   weight: ['400', '500', '600', '700', '900'],
+//   subsets: ['latin'],
+// })
 
 
 export const metadata: Metadata = {
@@ -32,7 +32,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={noto.className}
+        className={""}
+      // noto.className
       >
         <Providers>
           <Header />
