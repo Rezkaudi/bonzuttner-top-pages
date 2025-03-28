@@ -37,9 +37,9 @@ const Inquiry = () => {
                     <div className="space-y-8 w-full">
                         <FormElement elementType="select" label={"お問い合わせの種類"} isRequired={true} fieldName={"typeOfInquiry"} value={inquiryData.typeOfInquiry} onChange={handleChange} >
                             <option value="">選択してください </option>
-                            <option value="a1">A1</option>
-                            <option value="a2">A2</option>
-                            <option value="a3">A3</option>
+                            <option value="a1">当社の取材について</option>
+                            <option value="a2">サービスの相談</option>
+                            <option value="a3">その他</option>
                         </FormElement>
                         <FormElement elementType="text" label={"お名前"} isRequired={true} placeholder={" お名前を入力してください"} fieldName={"name"} value={inquiryData.name} onChange={handleChange} />
                         <FormElement elementType="text" label={"フリガナ"} isRequired={true} placeholder={" フリガナを入力してください"} fieldName={"furigana"} value={inquiryData.furigana} onChange={handleChange} />
