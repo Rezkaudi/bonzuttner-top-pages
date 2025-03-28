@@ -36,13 +36,13 @@ const Footer: React.FC = () => {
                                 <Link href={'/#service'} className="font-medium block mb-2">SERVICE</Link>
                                 <ul className="text-sm text-white space-y-1 ml-1">
                                     <li>
-                                        <Link href={"/creative"}>-CREATIVE</Link>
+                                        <Link href={"#"}>-Product Development</Link>
                                     </li>
                                     <li>
-                                        <Link href={"/creative"}>-CREATIVE</Link>
+                                        <Link href={"#"}>-Hands-on Support</Link>
                                     </li>
                                     <li>
-                                        <Link href={"/creative"}>-CREATIVE</Link>
+                                        <Link href={"/creative"}>-Creative</Link>
                                     </li>
                                 </ul>
                             </div>

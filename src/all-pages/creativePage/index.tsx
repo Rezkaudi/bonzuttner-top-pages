@@ -227,7 +227,7 @@ const index = () => {
               </div>
               <div className="flex mt-4 justify-end">
                 <span className="w-full text-center text-[20px] font-medium leading-7">
-                  Artificial Intelligence
+                  Product Development
                 </span>
                 <Image
                   src="/images/creative/arrow-right.svg"
@@ -244,7 +244,7 @@ const index = () => {
               </div>
               <div className="flex mt-4 justify-end">
                 <span className="w-full text-center text-[20px] font-medium leading-7">
-                  Internet of Things
+                  Hands-on Support
                 </span>
                 <Image
                   src="/images/creative/arrow-right.svg"
