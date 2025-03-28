@@ -99,7 +99,7 @@ const Header: React.FC = () => {
                                             <Link onClick={toggleMenu} href="/" className="text-sm ">
                                                 個人情報の取り扱いについて
                                             </Link>
-                                            <Link onClick={toggleMenu} href="https://instagram.com" className="">
+                                            <Link onClick={toggleMenu} href="https://www.instagram.com/bonzuttner/" target='_blank' className="">
                                                 <Image src={"/images/insta.svg"} alt="insta" width={24} height={24} />
                                             </Link>
                                         </div>
