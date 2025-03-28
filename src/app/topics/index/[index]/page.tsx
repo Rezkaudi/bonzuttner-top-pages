@@ -43,12 +43,12 @@ const ArticleDetailsByIndex: React.FC = () => {
   if (loading) {
     return (
       <section className="relative w-full">
-        <div className="w-full flex justify-between bg-[#F5F5F5] pt-14 pl-24 pr-14 lg:h-[300px]">
+        {/* <div className="w-full flex justify-between bg-[#F5F5F5] pt-14 pl-24 pr-14 lg:h-[300px]">
           <div className="relative">
             <h1 className="text-[40px] font-medium leading-10 mb-2">ARTICLE</h1>
             <p className="text-base font-medium leading-6">記事</p>
           </div>
-        </div>
+        </div> */}
         <div className="px-24 py-10 text-center">
           <p>Loading article...</p>
         </div>
@@ -59,12 +59,12 @@ const ArticleDetailsByIndex: React.FC = () => {
   if (!article) {
     return (
       <section className="relative w-full">
-        <div className="w-full flex justify-between bg-[#F5F5F5] pt-14 pl-24 pr-14 lg:h-[300px]">
+        {/* <div className="w-full flex justify-between bg-[#F5F5F5] pt-14 pl-24 pr-14 lg:h-[300px]">
           <div className="relative">
             <h1 className="text-[40px] font-medium leading-10 mb-2">ARTICLE</h1>
             <p className="text-base font-medium leading-6">記事</p>
           </div>
-        </div>
+        </div> */}
         <div className="px-24 py-10 text-center">
           <p>Article not found</p>
           <Link href="/topics" className="text-[#00A1E9] mt-4 inline-block">
@@ -77,12 +77,12 @@ const ArticleDetailsByIndex: React.FC = () => {
 
   return (
     <section className="relative w-full">
-      <div className="w-full flex justify-between bg-[#F5F5F5] pt-14 pl-24 pr-14 lg:h-[300px]">
+      {/* <div className="w-full flex justify-between bg-[#F5F5F5] pt-14 pl-24 pr-14 lg:h-[300px]">
         <div className="relative">
           <h1 className="text-[40px] font-medium leading-10 mb-2">ARTICLE</h1>
           <p className="text-base font-medium leading-6">記事</p>
         </div>
-      </div>
+      </div> */}
       <div className="px-24 py-10">
         <div className="mb-8">
           <Link href="/topics" className="flex items-center text-[#00A1E9]">
