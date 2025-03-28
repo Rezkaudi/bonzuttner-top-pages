@@ -55,7 +55,7 @@ const Header: React.FC = () => {
 
                         <div className="h-full flex-1 flex items-center justify-center">
 
-                            <div className="mx-auto w-full h-full max-w-[900px] flex items-start flex-col gap-12 justify-center">
+                            <div className="mx-auto w-full h-full max-w-[900px] flex items-start flex-col gap-12 justify-center pl-[5%]">
                                 <Link href="/" onClick={toggleMenu}>
                                     <Image src="/images/bonzuttner-logo.png" width={140} height={58} alt="BonZuttner" />
                                 </Link>
