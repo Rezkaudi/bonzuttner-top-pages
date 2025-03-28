@@ -2,7 +2,7 @@
 import Container from "@/shared-components/Container";
 
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Pagination } from 'swiper/modules';
+import { Pagination, Autoplay } from 'swiper/modules';
 
 import 'swiper/css';
 import 'swiper/css/pagination';
@@ -52,8 +52,12 @@ const Story = () => {
                     <div className="max-w-[900px] w-full lg:h-[480px] h-fit">
                         <Swiper
                             pagination={{ clickable: true }}
-                            modules={[Pagination]}
+                            modules={[Pagination, Autoplay]}
                             spaceBetween={50}
+                            autoplay={{
+                                delay: 3000,
+                                disableOnInteraction: false
+                            }}
                         >
                             {stories.map(item =>
                                 <SwiperSlide key={item.id}>
