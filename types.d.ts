@@ -21,3 +21,13 @@ type InquiryDataType = {
     agree: boolean
 
 }
+
+type Article = {
+    id: number;
+    publishedAt: string;
+    Title: string;
+    category: {
+        Name: string
+    };
+    Body: string
+}

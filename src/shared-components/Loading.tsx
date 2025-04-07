@@ -5,9 +5,9 @@ import { Spinner } from "@nextui-org/react";
 
 type Size = "sm" | "md" | "lg";
 
-const Loading: React.FC<{ size?: Size }> = ({ size }) => {
+const Loading: React.FC<{ size?: Size, className?: string }> = ({ size, className }) => {
     return (
-        <div className="w-full h-screen flex items-center justify-center">
+        <div className={`w-full h-screen flex items-center justify-center ${className}`}>
             <Spinner size={size || "md"} label="Loading ..." color="primary" labelColor="primary" />
         </div>
     )

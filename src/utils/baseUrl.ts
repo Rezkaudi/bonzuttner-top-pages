@@ -1,0 +1,1 @@
+export const baseUrl: string = "https://bonzuttner-top-pages.netlify.app"
