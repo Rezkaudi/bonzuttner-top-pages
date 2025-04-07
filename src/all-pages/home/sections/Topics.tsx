@@ -32,7 +32,7 @@ const Topics = () => {
             <Container className="py-20">
                 <h2 className="font-medium text-4xl">TOPICS</h2>
                 <div className="mt-10 w-full mx-auto">
-                    <Blog articles={articles} />
+                    <Blog articles={articles?.slice(0, 3)} />
                     <div className="w-full mt-12 flex items-center justify-center">
                         <ReadMoreBtn href="/topics" />
                     </div>

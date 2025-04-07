@@ -4,7 +4,7 @@ import Link from "next/link";
 import React from "react";
 
 interface IBlog {
-    articles: Article[] | null
+    articles: Article[] | null | undefined
 }
 
 const Blog: React.FC<IBlog> = ({ articles }) => {
