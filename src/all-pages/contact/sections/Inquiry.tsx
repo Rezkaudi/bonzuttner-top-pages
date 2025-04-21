@@ -25,10 +25,44 @@ const Inquiry = () => {
         }));
     };
 
-    const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
-        e.preventDefault()
-        console.log(inquiryData)
-    }
+    const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+        e.preventDefault();
+        
+        // Validate required fields on frontend
+        if (!inquiryData.typeOfInquiry || !inquiryData.name || !inquiryData.furigana || !inquiryData.email || !inquiryData.inquiryDetails || !inquiryData.agree) {
+            alert("必須項目をすべて入力してください。");
+            return;
+        }
+        
+        try {
+            const res = await fetch("/api/sendMail", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify(inquiryData)
+            });
+    
+            const data = await res.json();
+            
+            if (res.ok) {
+                alert("送信されました！");
+                // Reset form after successful submission
+                setInquiryData({
+                    typeOfInquiry: "",
+                    name: "",
+                    furigana: "",
+                    email: "",
+                    agree: false,
+                    inquiryDetails: ""
+                });
+            } else {
+                console.error("API エラー:", data);
+                alert(`送信に失敗しました: ${data.error || "不明なエラー"}`);
+            }
+        } catch (error) {
+            console.error("送信エラー:", error);
+            alert("エラーが発生しました。ネットワーク接続を確認してください。");
+        }
+    };
 
     return (
         <section className="bg-white">

@@ -3,7 +3,7 @@ import axios from 'axios';
 
 export async function GET() {
   try {
-    const response = await axios.get('http://82.165.187.125:1337/api/articles?populate=category&sort[0]=id:desc', {
+    const response = await axios.get(process.env.API_URL+'/api/articles?populate=category&sort[0]=id:desc', {
       headers: {
         Authorization: `Bearer ${process.env.STRAPI_API_TOKEN}`,
         "X-TENANT-ID": process.env.TENANT_ID,
