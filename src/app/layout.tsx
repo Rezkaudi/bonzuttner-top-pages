@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-// import { Noto_Sans_JP } from 'next/font/google'
+import { Noto_Sans_JP } from 'next/font/google'
 
 
 import { Providers } from "./providers";
@@ -10,10 +10,10 @@ import Footer from "@/shared-sections/Footer";
 
 // opengraph-image.png
 
-// const noto = Noto_Sans_JP({
-//   weight: ['400', '500', '600', '700', '900'],
-//   subsets: ['latin'],
-// })
+const noto = Noto_Sans_JP({
+  weight: ['400', '500', '600', '700', '900'],
+  subsets: ['latin'],
+})
 
 
 export const metadata: Metadata = {
@@ -35,10 +35,7 @@ export default function RootLayout({
         <link rel="icon" href="/favicon.ico" sizes="any" />
         <link rel="icon" type="image/png" href="/images/bonzuttner_fabicon.png" />
       </head>
-      <body
-        className={""}
-      // noto.className
-      >
+      <body className={noto.className}>
         <Providers>
           <Header />
           {children}
