@@ -1,20 +1,17 @@
 import type { Metadata } from "next";
 import { Noto_Sans_JP } from 'next/font/google'
 
-
 import { Providers } from "./providers";
 import "./globals.css";
-
+1
 import Header from "@/shared-sections/Header";
 import Footer from "@/shared-sections/Footer";
-
-// opengraph-image.png
+import GTMInitializer from "@/types/GTMInitializer";
 
 const noto = Noto_Sans_JP({
   weight: ['400', '500', '600', '700', '900'],
   subsets: ['latin'],
 })
-
 
 export const metadata: Metadata = {
   title: {
@@ -37,6 +34,7 @@ export default function RootLayout({
       </head>
       <body className={noto.className}>
         <Providers>
+          <GTMInitializer /> 
           <Header />
           {children}
           <Footer />
