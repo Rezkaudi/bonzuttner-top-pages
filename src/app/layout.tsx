@@ -3,7 +3,7 @@ import { Noto_Sans_JP } from 'next/font/google'
 
 import { Providers } from "./providers";
 import "./globals.css";
-1
+
 import Header from "@/shared-sections/Header";
 import Footer from "@/shared-sections/Footer";
 import GTMInitializer from "@/types/GTMInitializer";
@@ -34,7 +34,7 @@ export default function RootLayout({
       </head>
       <body className={noto.className}>
         <Providers>
-          <GTMInitializer /> 
+          <GTMInitializer />
           <Header />
           {children}
           <Footer />
