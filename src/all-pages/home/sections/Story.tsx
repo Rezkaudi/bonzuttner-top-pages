@@ -39,9 +39,9 @@ const Story = () => {
 
     return (
         <section className="min-h-screen bg-gradient-to-b-from-transparent relative" id="story">
-            <Container className="pt-24">
-                <h2 className="text-white font-medium text-4xl">BonZuttnerの物語を巡りながら、未来をつくる旅へ</h2>
-                <p className="text-white font-normal text-base mt-5 max-w-5xl ">
+            <Container className="py-12 lg:pt-24">
+                <h2 className="text-white font-medium text-xl lg:text-4xl">BonZuttnerの物語を巡りながら、未来をつくる旅へ</h2>
+                <p className="text-white font-normal text-xs lg:text-base mt-7 max-w-5xl ">
                     {p1.split("\n").map((item, index) =>
                         <span className="block" key={index}>{item}</span>
                     )}
@@ -61,18 +61,30 @@ const Story = () => {
                         >
                             {stories.map(item =>
                                 <SwiperSlide key={item.id}>
-                                    <div className="w-full h-full flex items-center justify-start flex-col lg:flex-row">
-                                        <div className="flex flex-col lg:h-[430px] h-fit items-start px-5 sm:px-12 py-14 mr-0 bg-white w-full">
-                                            <div className="font-medium text-xl text-[#878787] lg:w-1/2 w-full text-center lg:text-end">
-                                                Vol.
-                                                <span className="text-3xl italic">{item.id}</span>
+                                    <div className="w-full h-full flex items-center justify-start px-4 flex-col-reverse lg:flex-row">
+                                        <div className="flex flex-col lg:h-[430px] h-full pb-10 items-start px-5 sm:px-12 mr-0 bg-white w-full">
+                                            <div className=" absolute left-0 w-full top-4 h-[400px] lg:hidden">
+
+
+                                                <div className="relative hidden w-full h-full sm:flex items-center justify-center ">
+                                                    <Image src={item.imageSrc} alt={item.title} fill />
+                                                </div>
+
+                                                <div className="relative w-full h-full flex items-center justify-center sm:hidden ">
+                                                    <Image src={item.imageSrc} alt={item.title} fill objectFit="cover" />
+                                                </div>
                                             </div>
-                                            <h2 className="font-bold text-2xl mt-8">{item.title}</h2>
-                                            <p className="text-start mt-2 font-normal text-base lg:max-w-[366px] w-full">{item.describtion}</p>
-                                            {item.href && <ReadMoreBtn href={item.href} />}
-                                            <div className="relative w-[300px] h-[400px] lg:hidden inline mx-auto mt-5">
-                                                <Image src={item.imageSrc} alt={item.title} fill />
+
+                                            <div className="mt-[450px] lg:mt-10 mb-10">
+                                                <div className="font-medium text-base lg:text-xl text-[#878787] w-full text-right underline  ">
+                                                    Vol.
+                                                    <span className="text-[22px] lg:text-3xl italic">{item.id}</span>
+                                                </div>
+                                                <h2 className="font-bold text-lg lg:text-2xl mt-8">{item.title}</h2>
+                                                <p className="text-start mt-2 font-normal text-xs lg:text-base lg:max-w-[366px] w-full">{item.describtion}</p>
+                                                {item.href ? <ReadMoreBtn href={item.href} /> : <span className="pt-16 block"></span>}
                                             </div>
+
                                         </div>
                                         <div className="lg:right lg:absolute lg:right-7 lg:top-0 lg:w-[400px] lg:h-[480px] z-10 lg:block hidden">
                                             <Image src={item.imageSrc} className=" object-cover" alt={item.title} fill />

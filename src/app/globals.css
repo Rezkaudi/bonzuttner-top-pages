@@ -29,13 +29,22 @@
 } */
 
 .swiper-pagination {
-  bottom: 50px !important;
-  margin-left: -35px;
+  bottom: 40px !important;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  margin-left: -50px !important;
+}
 
-  @media (max-width: 1024px) {
+@media (min-width: 1024px) {
+  .swiper-pagination {
     bottom: initial;
     margin-left: initial;
+    display: initial;
+    align-items: center;
+    justify-content: center;
   }
+
 }
 
 .swiper-pagination-bullet {
@@ -50,11 +59,11 @@
 
 .swiper-slide {
   width: 100% !important;
-  /* Center slide text vertically */
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
 
 .swiper-slide img {
   object-fit: contain;

@@ -1,16 +1,7 @@
-import Image from "next/image";
 
 const Hero = () => {
     return (
-        <section
-            className=" relative w-full h-[calc(100vh-90px)]"
-        >
-            <Image
-                src="/images/bonzuttner-team.png"
-                alt="bonzuttner-team"
-                className=" object-cover"
-                fill />
-
+        <section className=" w-full min-h-full h-[1000px] lg:h-[calc(100vh-90px)] lg:bg-[url('/images/bonzuttner-team.png')] bg-[url('/images/mv.png')] bg-cover lg:bg-right bg-top" >
         </section>
     )
 };

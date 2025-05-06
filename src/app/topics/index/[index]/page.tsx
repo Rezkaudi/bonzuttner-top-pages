@@ -5,6 +5,7 @@ import axios from "axios";
 import { useParams } from "next/navigation";
 import Link from "next/link";
 import Image from "next/image";
+import Loading from "@/shared-components/Loading";
 
 const ArticleDetailsByIndex: React.FC = () => {
   const { index } = useParams();
@@ -50,7 +51,7 @@ const ArticleDetailsByIndex: React.FC = () => {
           </div>
         </div> */}
         <div className="px-24 py-10 text-center">
-          <p>Loading article...</p>
+          <Loading />
         </div>
       </section>
     );
@@ -83,7 +84,7 @@ const ArticleDetailsByIndex: React.FC = () => {
           <p className="text-base font-medium leading-6">記事</p>
         </div>
       </div> */}
-      <div className="px-24 py-10">
+      <div className="p-8 lg:px-24 py-10">
         <div className="mb-8">
           <Link href="/topics" className="flex items-center text-[#00A1E9]">
             <Image
@@ -97,7 +98,7 @@ const ArticleDetailsByIndex: React.FC = () => {
           </Link>
         </div>
 
-        <div className="w-[70%] m-auto">
+        <div className="xl:w-[70%] m-auto">
           <div className="mb-4 flex justify-between items-center">
             <p className="text-xs font-normal border-1 rounded-3xl border-[#00A1E9] py-1 px-6 text-center leading-5 inline-block">
               {article.category?.Name || "BZ News"}
