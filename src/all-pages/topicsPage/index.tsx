@@ -42,9 +42,9 @@ const Index: React.FC = () => {
 
   return (
     <section className="relative w-full">
-      <div className="w-full flex justify-between bg-[#F5F5F5]  pt-14 pl-8 lg:pl-24 pr-14 h-[300px]">
+      <div className="w-full flex justify-between items-start lg:items-center bg-[#F5F5F5]  pt-8 pl-8 lg:pl-24 pr-14 h-48 lg:h-[300px]">
         <div className="relative">
-          <h1 className="text-[40px] font-medium leading-10 mb-2">TOPICS</h1>
+          <h1 className="text-[22px] lg:text-[40px] font-medium leading-10 mb-2">TOPICS</h1>
           <p className="text-base font-medium leading-6">トピックス</p>
         </div>
       </div>

@@ -27,22 +27,22 @@ const Inquiry = () => {
 
     const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
-        
+
         // Validate required fields on frontend
         if (!inquiryData.typeOfInquiry || !inquiryData.name || !inquiryData.furigana || !inquiryData.email || !inquiryData.inquiryDetails || !inquiryData.agree) {
             alert("必須項目をすべて入力してください。");
             return;
         }
-        
+
         try {
             const res = await fetch("/api/sendMail", {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify(inquiryData)
             });
-    
+
             const data = await res.json();
-            
+
             if (res.ok) {
                 alert("送信されました！");
                 // Reset form after successful submission
@@ -66,9 +66,9 @@ const Inquiry = () => {
 
     return (
         <section className="bg-white">
-            <Container className="py-[100px]">
-                <form className="max-w-3xl mx-auto space-y-[100px] w-full" onSubmit={handleSubmit}>
-                    <div className="space-y-8 w-full">
+            <Container className="py-[50px] lg:py-[100px]">
+                <form className="lg:max-w-3xl mx-auto space-y-[100px] w-full" onSubmit={handleSubmit}>
+                    <div className=" space-y-7 lg:space-y-8 w-full">
                         <FormElement elementType="select" label={"お問い合わせの種類"} isRequired={true} fieldName={"typeOfInquiry"} value={inquiryData.typeOfInquiry} onChange={handleChange} >
                             <option value="">選択してください </option>
                             <option value="a1">当社の取材について</option>

@@ -25,18 +25,18 @@ const Mission = () => {
     ]
     return (
         <section className="bg-[#00A1E9]">
-            <Container className="py-[110px]">
-                <div className="w-full space-y-12">
+            <Container className="py-[50px] lg:py-[110px]">
+                <div className="w-full space-y-7 lg:space-y-12">
                     <h2 className="flex items-center text-white justify-start">
                         <hr className="w-[50px] border-white mr-4"></hr>
-                        <span className="font-medium text-4xl">MISSION・VISION・VALUE</span>
+                        <span className="font-medium text-xl lg:text-4xl">MISSION・VISION・VALUE</span>
                     </h2>
-                    <div className="max-w-5xl mx-auto text-base text-black font-normal bg-white py-12 px-2 text-center space-y-8">
+                    <div className="max-w-5xl mx-auto text-base text-black font-normal bg-white py-6 lg:py-12 px-2 text-center space-y-8">
                         {data.map(item =>
                             <div key={item.id} className="space-y-3">
-                                <h3 className="text-3xl font-medium text-[#00A1E9]">{item.title}</h3>
-                                <h4 className="text-xl font-medium">{item.subTitle}</h4>
-                                <p className="text-left max-w-2xl mx-auto">{item.content}</p>
+                                <h3 className="text-lg lg:text-3xl font-medium text-[#00A1E9]">{item.title}</h3>
+                                <h4 className="text-base lg:text-xl font-medium">{item.subTitle}</h4>
+                                <p className="text-left max-w-2xl mx-auto text-xs lg:text-base">{item.content}</p>
                             </div>
                         )}
                     </div>

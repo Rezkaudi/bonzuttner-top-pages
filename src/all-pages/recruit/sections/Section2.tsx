@@ -5,10 +5,10 @@ const Section2 = () => {
 
         return (
                 <section className="bg-white">
-                        <Container className="py-[100px]">
-                                <div className="max-w-3xl mx-auto space-y-10">
-                                        <h2 className="font-medium text-4xl">世界は広い。だからこそ、もっと飛び込め！！</h2>
-                                        <div className="space-y-5">
+                        <Container className="py-[50px] lg:py-[100px]">
+                                <div className="max-w-3xl mx-auto space-y-8 lg:space-y-10">
+                                        <h2 className="font-medium text-xl lg:text-4xl  lg:text-left text-center">世界は広い。だからこそ、もっと飛び込め！！</h2>
+                                        <div className="space-y-5 text-xs lg:text-base">
                                                 {paragraph.split('\n').map((item, index) =>
                                                         <p key={index} className="font-normal text-base">{item}</p>
                                                 )}

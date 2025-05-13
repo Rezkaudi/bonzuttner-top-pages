@@ -14,20 +14,20 @@ const CompanyOrigin = () => {
 
     return (
         <section>
-            <Container className="my-[75px] space-y-3">
-                <h2 className="text-4xl font-medium flex items-center justify-start gap-5">
+            <Container className="my-[50px] lg:my-[75px] space-y-3">
+                <h2 className="text-xl lg:text-4xl font-medium flex items-center justify-start gap-5">
                     <span className="bg-[#00A1E9] w-12 h-[1px]"></span>
                     <span>COMPANY ORIGIN</span>
                 </h2>
-                <div className="ml-[70px] space-y-3">
+                <div className="lg:ml-[70px] space-y-3">
                     <div>
                         {p1.split("\n").map((item, index) =>
-                            <p key={index} className="text-[#0092BE] text-lg font-medium">{item}</p>
+                            <p key={index} className="text-[#0092BE] text-sm lg:text-lg font-medium">{item}</p>
                         )}
                     </div>
                     <div>
                         {p2.split("\n").map((item, index) =>
-                            <h3 key={index} className="text-3xl font-medium">{item}</h3>
+                            <h3 key={index} className="text-lg lg:text-3xl font-medium">{item}</h3>
                         )}
                     </div>
 
@@ -37,7 +37,7 @@ const CompanyOrigin = () => {
                         </div>
                         <div className="space-y-8 w-full">
                             {p3.split("\n").map((item, index) =>
-                                <p key={index} className="text-base font-normal">{item}</p>
+                                <p key={index} className="text-xs lg:text-base font-normal">{item}</p>
                             )}
                             <Button as={Link} href="/company" className="text-white bg-[#00A1E9] px-6">COMPANY</Button>
                         </div>

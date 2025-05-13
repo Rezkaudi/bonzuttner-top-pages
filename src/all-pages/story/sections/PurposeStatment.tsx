@@ -6,12 +6,12 @@ const PurposeStatment = () => {
     return (
         <section className="bg-[#00A1E9]">
             <Container className="py-[75px] space-y-3">
-                <h2 className="text-4xl font-medium flex items-center justify-start gap-5 text-white">
+                <h2 className="text-lg lg:text-4xl font-medium flex items-center justify-start gap-5 text-white">
                     <span className="bg-white w-12 h-[1px]"></span>
                     <span>PURPOSE STATMENT</span>
                 </h2>
                 <div className="sm:px-[70px] space-y-10 w-full block ">
-                    <h3 className="text-3xl font-medium text-white">3つの「Re.」</h3>
+                    <h3 className="text-lg lg:text-3xl font-medium text-white">3つの「Re.」</h3>
                     <div className="w-full bg-white mx-auto py-12 space-y-8 text-center">
                         <h3>Refugee</h3>
                         <div className="w-[300px] h-[300px] rounded-full flex flex-col gap-2 items-center justify-center bg-[#00A1E91A] mx-auto">
@@ -30,7 +30,7 @@ const PurposeStatment = () => {
 
                     <div>
                         {p1.split("\n").map((item, index) =>
-                            <p key={index} className="text-base font-normal text-white text-center">{item}</p>
+                            <p key={index} className="text-xs lg:text-base font-normal text-white text-center">{item}</p>
                         )}
                     </div>
 

@@ -20,15 +20,15 @@ const MemberCard: React.FC<IMemberCard> = ({ data }) => {
 
     return (
         <>
-            <div className="w-[382px] cursor-pointer space-y-4" onClick={onOpen}>
-                <div className="relative w-full h-[400px]">
+            <div className="w-[160px] lg:w-[382px] cursor-pointer space-y-4" onClick={onOpen}>
+                <div className="relative w-full h-[170px] lg:h-[400px]">
                     <Image src={data?.imageSrc} alt={data?.name} fill className=" object-cover" />
                 </div>
 
                 <div className="w-full flex items-center justify-between border-l-2 border-[#00A1E9]">
                     <div className=" space-y-2 pl-7">
-                        <span className="text-lg font-normal">{data?.mainWork}</span>
-                        <h2 className="text-xl font-medium">{data?.name}</h2>
+                        <span className="text-xs lg:text-lg font-normal">{data?.mainWork}</span>
+                        <h2 className="text-xs lg:text-xl font-medium">{data?.name}</h2>
                     </div>
                     <Image src={"/images/arrow.svg"} alt={"arrow"} width={23} height={23} />
                 </div>

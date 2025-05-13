@@ -8,19 +8,22 @@ const Message = () => {
 
     return (
         <section className="bg-white">
-            <Container className="py-[110px]">
-                <div className="w-full flex items-start justify-center gap-24">
+            <Container className="py-[50px] xl:py-[110px]">
+                <div className="w-full flex items-start justify-center gap-24  xl:flex-row flex-col">
 
-                    <div className="flex items-start justify-center gap-5">
-                        <span className=" text-3xl font-black" style={{ "writingMode": "vertical-lr" }}>MESSAGE</span>
-                        <div className="relative w-[400px] h-[500px]">
+                    <div className="flex items-center xl:items-start xl:flex-row flex-col justify-center gap-5 xl:w-fit w-full">
+                        <span className=" text-3xl font-black xl:block hidden" style={{ "writingMode": "vertical-lr" }}>MESSAGE</span>
+
+                        <span className=" text-3xl font-black xl:hidden block" >MESSAGE</span>
+
+                        <div className="relative w-[330px] xl:w-[400px] h-[415px] lg:h-[500px]">
                             <Image src="/images/ceo.png" className=" object-cover" fill alt="ceo" />
                         </div>
                     </div>
 
                     <div className="space-y-8">
-                        <h2 className="text-3xl font-medium">難民ではなく、仲間として。世界を変える挑戦を。</h2>
-                        <div className=" space-y-5 text-base font-normal">
+                        <h2 className="text-lg xl:text-3xl font-medium">難民ではなく、仲間として。世界を変える挑戦を。</h2>
+                        <div className=" space-y-5 text-xs xl:text-base font-normal">
                             {
                                 p1.split('\n').map((item, index) =>
                                     <p key={index}>{item}</p>
