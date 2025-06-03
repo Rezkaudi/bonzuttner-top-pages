@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Noto_Sans_JP } from 'next/font/google'
+// import { Noto_Sans_JP } from 'next/font/google'
 
 import { Providers } from "./providers";
 import "./globals.css";
@@ -8,10 +8,10 @@ import Header from "@/shared-sections/Header";
 import Footer from "@/shared-sections/Footer";
 import GTMInitializer from "@/types/GTMInitializer";
 
-const noto = Noto_Sans_JP({
-  weight: ['400', '500', '600', '700', '900'],
-  subsets: ['latin'],
-})
+// const noto = Noto_Sans_JP({
+//   weight: ['400', '500', '600', '700', '900'],
+//   subsets: ['latin'],
+// })
 
 export const metadata: Metadata = {
   title: {
@@ -32,7 +32,8 @@ export default function RootLayout({
         <link rel="icon" href="/favicon.ico" sizes="any" />
         <link rel="icon" type="image/png" href="/images/bonzuttner_fabicon.png" />
       </head>
-      <body className={noto.className}>
+      <body >
+        {/* className={noto.className} */}
         <Providers>
           <GTMInitializer />
           <Header />

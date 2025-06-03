@@ -2,7 +2,7 @@ import Container from "@/shared-components/Container";
 import React from "react";
 
 const Hero = () => {
-    const p1 = "BonZuttnerでは⽣まれた国や育った環境が異なっても、私たちはみな、夢を追い、生活を楽しみ、\n 社会に貢献したいという共通の想いを持つ人たちの集団です。\n さまざまな背景を持ちながらも、共に笑い、学び、成長し続ける仲間たちを紹介します。"
+    const p1 = "BonZuttnerには、生まれた国や育った環境が異なっていても、\n 「夢を追い、日々を楽しみ、社会に貢献したい」という共通の想いを持つメンバーが集まっています。\n 様々なバックグラウンドを持ちながらも、共に笑い、学び、成長し続ける仲間たちをご紹介します。"
     return (
         <section className="bg-[#F5F5F5]">
             <Container>

@@ -10,7 +10,7 @@ const Member = () => {
         <section className=" bg-[#F5F5F5]" id="member">
             <Container className="w-full xl:pl-0 ">
                 <div className="flex items-center justify-between xl:flex-row flex-col-reverse gap-16 py-14 lg:py-24 ">
-                    <ReadMoreBtn href="/members" className=" block lg:inline-hidden leading-3 mt-0" />
+                    <ReadMoreBtn href="/members" className=" block xl:hidden leading-3 mt-0" />
 
                     <div className="flex items-start justify-start flex-1">
                         <Image width={200} height={450} className="w-[110px] lg:w-[200px] h-[250px] lg:h-[450px]" src="/images/members1.png" alt="members" />
