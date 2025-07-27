@@ -9,7 +9,7 @@ const Header: React.FC = () => {
     const toggleMenu = () => setIsMenuOpen(prev => !prev);
 
     return (
-        <header className="bg-[#00A1E9] h-24 px-[50px] w-full flex items-center justify-between sticky z-50 top-0">
+        <header className="bg-[#00A1E9] h-24 px-[20px] lg:px-[50px] w-full flex items-center justify-between sticky z-50 top-0">
             {/* Logo Centered */}
             <div className="flex justify-center" onClick={() => setIsMenuOpen(false)}>
                 <Link href="/" className="flex items-center">
@@ -82,7 +82,7 @@ const Header: React.FC = () => {
                                         ))}
                                         {/* Footer Links */}
                                         <div className="py-8 grid grid-cols-2 gap-8">
-                                            <Link onClick={toggleMenu} href="/" className="text-sm">プライバシーポリシー</Link>
+                                            <Link onClick={toggleMenu} href="/privacy-policy" className="text-sm">プライバシーポリシー</Link>
                                             <Link onClick={toggleMenu} href="/" className="text-sm">個人情報の取り扱いについて</Link>
                                             <Link onClick={toggleMenu} href="https://www.instagram.com/bonzuttner/" target="_blank">
                                                 <Image src={"/images/insta.svg"} alt="insta" width={24} height={24} />

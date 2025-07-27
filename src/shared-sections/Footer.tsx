@@ -62,7 +62,7 @@ const Footer: React.FC = () => {
                 <div className="w-full border-t border-white flex flex-col-reverse md:flex-row justify-between items-center text-xs text-white">
                     <p className='mt-5'>Copyright © BonZuttner, Inc. All Rights Reserved.</p>
                     <div className="flex space-x-4 mt-5">
-                        <Link href="/" className="hover:text-white">プライバシーポリシー</Link>
+                        <Link href="/privacy-policy" className="hover:text-white">プライバシーポリシー</Link>
                         <Link href="/" className="hover:text-white">個人情報の取り扱いについて</Link>
                     </div>
                 </div>

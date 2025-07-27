@@ -1,113 +1,74 @@
-"use client";
-
-import React, { useState, useEffect } from "react";
-import axios from "axios";
-import { useParams } from "next/navigation";
 import Link from "next/link";
-import Image from "next/image";
-import Loading from "@/shared-components/Loading";
 
-const ArticleDetailsByIndex: React.FC = () => {
-  const { index } = useParams();
-  // const [articles, setArticles] = useState<any[]>([]);
-  const [article, setArticle] = useState<{
-    Title: string;
-    Body: string;
-    publishedAt: string;
-    category: { Name: string };
-  } | null>(null);
-  const [loading, setLoading] = useState(true);
+interface Article {
+  Title: string;
+  Body: string;
+  slug:string;
+  publishedAt: string;
+  category: { Name: string };
+  seo_info: {
+    title: string;
+    description: string;
+    keywords: string;
+    og_title?: string;
+    og_description?: string;
+    og_image?: string;
+    twitter_title?: string;
+    twitter_description?: string;
+    canonical_url?: string;
+  } | null;
+}
 
-  useEffect(() => {
-    const fetchArticles = async () => {
-      try {
-        const response = await axios.get('/api/articles');
-        const articlesData = response.data.data;
-        // setArticles(articlesData);
+async function fetchArticle(slug: string): Promise<Article | null> {
+  try {
+    const res = await fetch(`/api/articles/${slug}`, {
+      cache: "no-store",
+    });
+    const article = await res.json();
 
-        // Get the article at the specified index
-        const articleIndex = parseInt(index as string);
-        if (!isNaN(articleIndex) && articleIndex >= 0 && articleIndex < articlesData.length) {
-          setArticle(articlesData[articleIndex]);
-        }
-
-        setLoading(false);
-      } catch (error) {
-        console.error("Error fetching articles:", error);
-        setLoading(false);
-      }
-    };
-
-    fetchArticles();
-  }, [index]);
-
-  if (loading) {
-    return (
-      <section className="relative w-full">
-        {/* <div className="w-full flex justify-between bg-[#F5F5F5] pt-14 pl-24 pr-14 lg:h-[300px]">
-          <div className="relative">
-            <h1 className="text-[40px] font-medium leading-10 mb-2">ARTICLE</h1>
-            <p className="text-base font-medium leading-6">記事</p>
-          </div>
-        </div> */}
-        <div className="px-24 py-10 text-center">
-          <Loading />
-        </div>
-      </section>
-    );
+    console.log("🔍 SEO Info:", article.seo_info);
+    if (!res.ok) return null;
+    return article;
+  } catch (err) {
+    console.error("Fetch article failed:", err);
+    return null;
   }
+}
 
+// MAIN CHANGE: Update the params type to Promise
+export default async function ArticlePage({ 
+  params 
+}: { 
+  params: Promise<{ slug: string }> // Changed to Promise
+}) {
+  // Await the params
+  const { slug } = await params;
+  
+  const article = await fetchArticle(slug);
+  
   if (!article) {
     return (
-      <section className="relative w-full">
-        {/* <div className="w-full flex justify-between bg-[#F5F5F5] pt-14 pl-24 pr-14 lg:h-[300px]">
-          <div className="relative">
-            <h1 className="text-[40px] font-medium leading-10 mb-2">ARTICLE</h1>
-            <p className="text-base font-medium leading-6">記事</p>
-          </div>
-        </div> */}
-        <div className="px-24 py-10 text-center">
-          <p>Article not found</p>
-          <Link href="/topics" className="text-[#00A1E9] mt-4 inline-block">
+        <section className="w-full px-6 md:px-10 lg:px-24 py-10 text-center">
+          <p className="mb-4">Article not found</p>
+          <Link href="/topics" className="text-blue-500 hover:underline">
             Back to Topics
           </Link>
-        </div>
-      </section>
+        </section>
     );
   }
 
   return (
-    <section className="relative w-full">
-      {/* <div className="w-full flex justify-between bg-[#F5F5F5] pt-14 pl-24 pr-14 lg:h-[300px]">
-        <div className="relative">
-          <h1 className="text-[40px] font-medium leading-10 mb-2">ARTICLE</h1>
-          <p className="text-base font-medium leading-6">記事</p>
-        </div>
-      </div> */}
-      <div className="p-8 lg:px-24 py-10">
-        <div className="mb-8">
-          <Link href="/topics" className="flex items-center text-[#00A1E9]">
-            <Image
-              src="/images/creative/arrow-right.svg"
-              alt="arrow-left"
-              width={23}
-              height={23}
-              className="transform rotate-180 mr-2"
-            />
-            Back to Topics
-          </Link>
-        </div>
-
-        <div className="xl:w-[70%] m-auto">
-          <div className="mb-4 flex justify-between items-center">
-            <p className="text-xs font-normal border-1 rounded-3xl border-[#00A1E9] py-1 px-6 text-center leading-5 inline-block">
-              {article.category?.Name || "BZ News"}
-            </p>
-            <p className="text-sm font-normal">
-              {article.publishedAt
+      <section className="w-full px-6 md:px-10 lg:px-24 py-10">
+        <div className="max-w-[1000px] mx-auto">
+          <div className="mb-10 flex justify-start items-center flex-wrap gap-10">
+          <span className="text-sm text-gray-600">
+            {article.publishedAt
                 ? new Date(article.publishedAt).toLocaleDateString()
                 : "N/A"}
-            </p>
+          </span>
+            <span className="text-xs font-medium border border-blue-500 rounded-full px-4 py-1 text-blue-500">
+            {article.category?.Name || "BZ News"}
+          </span>
           </div>
 
           <h2 className="text-2xl font-medium mb-6">{article.Title}</h2>
@@ -122,9 +83,15 @@ const ArticleDetailsByIndex: React.FC = () => {
             }}
           />
         </div>
-      </div>
-    </section>
-  );
-};
 
-export default ArticleDetailsByIndex;
+        <div className="my-10 w-full flex items-center">
+          <Link
+              href="/topics"
+              className="mx-auto bg-blue-500 px-[25px] py-[10px] rounded-lg text-white hover:bg-blue-300"
+          >
+            一覧へ戻る
+          </Link>
+        </div>
+      </section>
+  );
+}

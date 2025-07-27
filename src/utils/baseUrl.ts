@@ -1,1 +1,1 @@
-export const baseUrl: string = "https://bonzuttner-top-pages.netlify.app"
+export const baseUrl: string = process.env.BASE_URL || "https://bonzuttner.jp"

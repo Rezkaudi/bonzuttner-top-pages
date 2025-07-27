@@ -12,7 +12,7 @@ const PurposeStatment = () => {
                 </h2>
                 <div className="sm:px-[70px] space-y-10 w-full block ">
                     <h3 className="text-lg lg:text-3xl font-medium text-white">3つの「Re.」</h3>
-                    <div className="w-full bg-white mx-auto py-12 space-y-8 text-center">
+                    <div className="w-full bg-white mx-auto px-4 py-12 space-y-8 text-center">
                         <h3>Refugee</h3>
                         <div className="w-[300px] h-[300px] rounded-full flex flex-col gap-2 items-center justify-center bg-[#00A1E91A] mx-auto">
                             <p className="text-[#FFE300]">Restart</p>

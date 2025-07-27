@@ -25,7 +25,7 @@ const Company = () => {
                             </div>
                         </Link>
                         <Link href={"/recruit"} className="relative lg:rounded-s-lg lg:w-[450px] lg:h-[500px] w-[360px] h-[400px]">
-                            <Image fill src="/images/recruit.png" alt="recruit" />
+                            <Image fill src="/images/recruit.png" className="rounded-bl-[20px] lg:rounded-none" alt="recruit" />
                             <div className="absolute bottom-0 p-11">
                                 <h3 className="font-bold text-lg lg:text-3xl text-white">RECRUIT</h3>
                                 <p className="font-normal text-xs lg:text-base text-white mt-2">BonZuttnerでは、革新と情熱をもった仲間を求めています。多様性を尊重し、共に新たな価値を生み出しましょう。あなたの可能性を広げる次のステージがここにあります。</p>

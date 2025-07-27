@@ -83,7 +83,7 @@ const Inquiry = () => {
                         <FormElement elementType="text" label={"住所"} isRequired={false} placeholder={" 住所を入力してください"} fieldName={"address"} value={inquiryData.address || ""} onChange={handleChange} />
                         <FormElement elementType="textarea" label={"お問い合わせ内容"} isRequired={true} placeholder={" お問い合わせ内容を入力してください"} fieldName={"inquiryDetails"} value={inquiryData.inquiryDetails || ""} onChange={handleChange} />
 
-                        <span className="text-center block"><Link href={"/"} className="text-purple-500">プライバシーポリシー</Link> 及び <Link href={"/"} className="text-purple-500">個人情報の取り扱い</Link> について</span>
+                        <span className="text-center block"><Link href={"/privacy-policy"} className="text-purple-500">プライバシーポリシー</Link> 及び <Link href={"/"} className="text-purple-500">個人情報の取り扱い</Link> について</span>
                         <FormElement elementType="checkbox" label={"同意する"} isRequired={true} placeholder={" 同意する"} fieldName={"agree"} checked={inquiryData.agree} onChange={handleChange} />
                     </div>
                     <Button type="submit" isLoading={false} className="bg-[#00A1E9] text-white flex gap-4 flex-row-reverse items-center justify-center py-4 w-[230px] mx-auto  h-[60px] rounded-[30px]">

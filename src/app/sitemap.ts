@@ -1,12 +1,10 @@
 import { MetadataRoute } from 'next';
+import axios from 'axios';
 
 // baseUrl
 import { baseUrl } from '@/utils/baseUrl';
 
-
-export default function sitemap(): MetadataRoute.Sitemap {
-
-
+export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     // Static URLs
     const staticUrls: MetadataRoute.Sitemap = [
         {
@@ -38,7 +36,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
             lastModified: new Date().toISOString(),
             changeFrequency: "daily",
             priority: 0.8,
-        }, {
+        },
+        {
             url: `${baseUrl}/recruit`,
             lastModified: new Date().toISOString(),
             changeFrequency: "daily",
@@ -56,17 +55,39 @@ export default function sitemap(): MetadataRoute.Sitemap {
             changeFrequency: "daily",
             priority: 0.8,
         },
+        {
+            url: `${baseUrl}/privacy-policy`,
+            lastModified: new Date().toISOString(),
+            changeFrequency: "daily",
+            priority: 0.8,
+        },
+
     ];
 
-    // Dynamic Blog URLs
-    // const dynamicBlogUrls: MetadataRoute.Sitemap = blogsData.map((blog) => ({
-    //     url: `${baseUrl}/blogs/${encodeURIComponent(blog.title)}`,
-    //     lastModified: new Date().toISOString(), // Use actual lastModified if available
-    //     changeFrequency: "weekly",
-    //     priority: 0.7,
-    // }));
+    let dynamicBlogUrls: MetadataRoute.Sitemap = [];
+
+    try {
+        const response = await axios.get('http://213.165.93.245/api/articles?populate=category&sort[0]=id:desc', {
+            headers: {
+                Authorization: `Bearer ${process.env.STRAPI_API_TOKEN}`,
+                "X-TENANT-ID": process.env.TENANT_ID,
+            },
+        });
+
+        const blogsData = response.data.data;
+
+        dynamicBlogUrls = blogsData.map((blog: { slug: string; updatedAt?: string }) => ({
+            url: `${baseUrl}/topics/article/${blog.slug}`,
+            lastModified: blog.updatedAt || new Date().toISOString(),
+            changeFrequency: "weekly",
+            priority: 0.7,
+        }));
+    } catch (error) {
+        console.error("Error fetching articles:", error);
+    }
 
     return [
         ...staticUrls,
+        ...dynamicBlogUrls
     ];
 }
