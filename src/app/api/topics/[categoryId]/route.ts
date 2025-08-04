@@ -10,7 +10,7 @@ export async function GET(
     console.log(categoryId)
 
     const filter = (categoryId == 0 || !categoryId) ? "?populate=category&sort[0]=id:desc" : `?filters[category][id][$eq]=${categoryId}&populate=category&sort[0]=id:desc`
-    const url = `${process.env.API_URL}/api/articles${filter}`
+    const url = `http://213.165.93.245/api/articles${filter}`
 
     console.log("url", url)
 

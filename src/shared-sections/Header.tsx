@@ -1,13 +1,76 @@
+
 "use client";
 import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import menuItems from "@/data/menuItems.json";
+import { useTranslations, useLocale } from 'next-intl';
+import LanguageSwitcher from "@/shared-components/LanguageSwitcher";
 
 const Header: React.FC = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
+    const t = useTranslations('navigation');
+    const footerT = useTranslations('footer');
+    const locale = useLocale();
+
     const toggleMenu = () => setIsMenuOpen(prev => !prev);
 
+    // Menu items with translations
+    const menuItems = [
+        {
+            title: t('top'),
+            subtitle: t('topSub'),
+            href: `/${locale}`
+        },
+        {
+            title: t('story'),
+            subtitle: t('storySub'),
+            href: `/${locale}/story`
+        },
+        {
+            title: t('service'),
+            subtitle: t('serviceSub'),
+            href: `/${locale}/#service`,
+            items: [
+                {
+                    title: t('productDev'),
+                    href: "#"
+                },
+                {
+                    title: t('handsOnSupport'),
+                    href: "#"
+                },
+                {
+                    title: t('creative'),
+                    href: `/${locale}/creative`
+                }
+            ]
+        },
+        {
+            title: t('topics'),
+            subtitle: t('topicsSub'),
+            href: `/${locale}/topics`
+        },
+        {
+            title: t('member'),
+            subtitle: t('memberSub'),
+            href: `/${locale}/members`
+        },
+        {
+            title: t('company'),
+            subtitle: t('companySub'),
+            href: `/${locale}/company`
+        },
+        {
+            title: t('recruit'),
+            subtitle: t('recruitSub'),
+            href: `/${locale}/recruit`
+        },
+        {
+            title: t('contact'),
+            subtitle: t('contactSub'),
+            href: `/${locale}/contact`
+        }
+    ]
     return (
         <header className="bg-[#00A1E9] h-24 px-[20px] lg:px-[50px] w-full flex items-center justify-between sticky z-50 top-0">
             {/* Logo Centered */}
@@ -17,8 +80,10 @@ const Header: React.FC = () => {
                 </Link>
             </div>
 
-            {/* Burger Button Right */}
-            <div className="flex justify-end">
+
+            {/* Language Switcher and Burger Button */}
+            <div className="flex items-center space-x-4">
+                <LanguageSwitcher />
                 <button onClick={toggleMenu} className="w-[50px] h-[50px]">
                     <Image src="/images/menu.svg" width={50} height={50} alt="menu" />
                 </button>
@@ -82,8 +147,8 @@ const Header: React.FC = () => {
                                         ))}
                                         {/* Footer Links */}
                                         <div className="py-8 grid grid-cols-2 gap-8">
-                                            <Link onClick={toggleMenu} href="/privacy-policy" className="text-sm">プライバシーポリシー</Link>
-                                            <Link onClick={toggleMenu} href="/" className="text-sm">個人情報の取り扱いについて</Link>
+                                            <Link onClick={toggleMenu} href={`/${locale}/privacy-policy`} className="text-sm">{footerT('privacyPolicy')}</Link>
+                                            <Link onClick={toggleMenu} href={`/${locale}/privacy-policy`} className="text-sm">{footerT('personalInfo')}</Link>
                                             <Link onClick={toggleMenu} href="https://www.instagram.com/bonzuttner/" target="_blank">
                                                 <Image src={"/images/insta.svg"} alt="insta" width={24} height={24} />
                                             </Link>

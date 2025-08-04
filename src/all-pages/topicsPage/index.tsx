@@ -5,6 +5,13 @@ import axios from "axios";
 import Blog from "@/shared-sections/Blog";
 import Loading from "@/shared-components/Loading";
 import { Pagination, PaginationItemType } from "@heroui/react";
+import { useTranslations } from 'next-intl';
+
+
+interface Category {
+  id: string;
+  Name: string;
+}
 
 export const ChevronIcon = (props: any) => {
   return (
@@ -97,6 +104,7 @@ const renderItem = ({ ref, key, value, isActive, onNext, onPrevious, setPage }: 
 };
 
 const Index: React.FC = () => {
+  const t = useTranslations('topics');
   const [selectedTopic, setSelectedTopic] = useState<string | null>(null);
   const [selectedTopicId, setSelectedTopicId] = useState<string | null>(null);
   const [page, setPage] = useState<number>(1);
@@ -104,11 +112,11 @@ const Index: React.FC = () => {
 
 
   useEffect(() => {
-    const storedTopic = localStorage.getItem("selectedTopic") || "all";
+    const storedTopic = localStorage.getItem("selectedTopic") || t('all').toLowerCase();
     const storedId = localStorage.getItem("selectedTopicId") || "0";
     setSelectedTopic(storedTopic);
     setSelectedTopicId(storedId);
-  }, []);
+  }, [t]);
 
   const [articles, setArticles] = useState<Article[] | null>(null);
   const [categories, setCategories] = useState<Category[] | null>(null);
@@ -182,18 +190,18 @@ const Index: React.FC = () => {
         <>
           <div className="w-full flex justify-between items-start pt-[50px] bg-[#F5F5F5] pl-8 lg:pl-24 pr-14 h-48 lg:h-[300px]">
             <div className="relative">
-              <h1 className="text-[22px] lg:text-[40px] font-medium leading-10 mb-2">TOPICS</h1>
-              <p className="text-base font-medium leading-6">トピックス</p>
+              <h1 className="text-[22px] lg:text-[40px] font-medium leading-10 mb-2">{t('title')}</h1>
+              <p className="text-base font-medium leading-6">{t('subtitle')}</p>
             </div>
 
             <div className="relative">
-              <p className="text-xs font-medium leading-6">TOP - TOPICS</p>
+              <p className="text-xs font-medium leading-6">{t('breadcrumb')}</p>
             </div>
           </div>
 
           <div className="px-8 lg:px-24 py-10 xl:max-w-[1200px] mx-auto">
             <div className="flex mb-6 flex-wrap gap-7">
-              {renderTab("all", "0")}
+              {renderTab(t('all').toLowerCase(), "0")}
               {
                 categories?.map(item =>
                   <div key={item.id}>

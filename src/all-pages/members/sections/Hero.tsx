@@ -1,15 +1,17 @@
 import Container from "@/shared-components/Container";
 import React from "react";
+import { useTranslations } from 'next-intl';
 
 const Hero = () => {
-    const p1 = "BonZuttnerには、生まれた国や育った環境が異なっていても、\n 「夢を追い、日々を楽しみ、社会に貢献したい」という共通の想いを持つメンバーが集まっています。\n 様々なバックグラウンドを持ちながらも、共に笑い、学び、成長し続ける仲間たちをご紹介します。"
+    const t = useTranslations('members.hero');
+
     return (
         <section className="bg-[#F5F5F5]">
             <Container>
                 <div className="h-48 lg:h-80 flex items-start mt-8 lg:items-center justify-between w-full ">
                     <div className="space-y-3">
-                        <h1 className="text-[26px] lg:text-[40px] font-medium">Members</h1>
-                        <span className="text-xs lg:text-base font-normal block">メンバー紹介</span>
+                        <h1 className="text-[26px] lg:text-[40px] font-medium">{t('title')}</h1>
+                        <span className="text-xs lg:text-base font-normal block">{t('subtitle')}</span>
                     </div>
                     <div className="text-xs font-normal">
                         <span className="text-[#ADADAD]">TOP - </span>
@@ -18,9 +20,9 @@ const Hero = () => {
                 </div>
             </Container>
             <div className="bg-[#00A1E9] px-5 py-20 flex items-center justify-center flex-col text-white space-y-10 w-full text-center">
-                <h2 className="max-w-[445px] text-xl lg:text-3xl font-medium">異なる背景が織りなす、新しい価値を創造するチームです。</h2>
-                <div>
-                    {p1.split("\n").map((item, index) =>
+                <h2 className="max-w-[445px] text-xl lg:text-3xl font-medium">{t('heading')}</h2>
+                <div className="max-w-[750px]">
+                    {t('description').split("\n").map((item, index) =>
                         <p className="text-xs lg:text-base font-normal" key={index}>{item}</p>
                     )}
                 </div>

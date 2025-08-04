@@ -1,12 +1,27 @@
 type member = {
     id: string,
-    mainWork: string,
-    works: string,
+    mainWork: {
+        ja: string,
+        en: string
+    },
+    works: {
+        ja: string,
+        en: string
+    },
     name: string,
     imageSrc: string,
-    birthplace: string,
-    hobby: string,
-    others: string,
+    birthplace: {
+        ja: string,
+        en: string
+    },
+    hobby: {
+        ja: string,
+        en: string
+    },
+    others: {
+        ja: string,
+        en: string
+    },
 }
 
 type InquiryDataType = {

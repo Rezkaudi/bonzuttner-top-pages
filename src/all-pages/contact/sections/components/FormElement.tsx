@@ -1,3 +1,4 @@
+import { useTranslations } from "next-intl";
 import { ChangeEvent, ReactNode } from "react";
 
 interface IFormElement {
@@ -13,11 +14,13 @@ interface IFormElement {
 }
 
 const FormElement: React.FC<IFormElement> = ({ label, isRequired, placeholder, fieldName, value, onChange, checked, elementType, children }) => {
+    const t = useTranslations('contact.inquiry.form');
+
     return (
         <div className={`flex w-full text-xs lg:text-base font-normal ${elementType === "checkbox" ? "items-center justify-center flex-row-reverse gap-3" : "items-start justify-between flex-col lg:flex-row gap-3 lg:gap-8"}`}>
             <div className="space-x-5">
                 <label htmlFor="typeOfInquiry">{label}</label>
-                {isRequired && elementType !== "checkbox" && <span className=" bg-[#FF0004] px-3 text-white">必須</span>}
+                {isRequired && elementType !== "checkbox" && <span className=" bg-[#FF0004] px-3 text-white">{t("required")}</span>}
             </div>
 
             {elementType === "text" && <input required={isRequired} value={value} onChange={onChange} className="rounded border border-[#C9C9C9] outline-none w-full lg:w-2/3 p-2" placeholder={placeholder} id={fieldName} name={fieldName} type="text" />}

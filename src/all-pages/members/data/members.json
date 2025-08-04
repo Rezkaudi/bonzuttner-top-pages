@@ -1,82 +1,252 @@
 [
   {
     "id": "1",
-    "mainWork": "代表取締役",
-    "works": "代表取締役",
+    "mainWork": {
+      "ja": "代表取締役",
+      "en": "CEO"
+    },
+    "works": {
+      "ja": "代表取締役",
+      "en": "CEO"
+    },
     "name": "ちり",
     "imageSrc": "/images/members/m1.png",
-    "birthplace": "品川区にある八潮団地",
-    "hobby": "下駄の音を響かせること",
-    "others": "一言　アンパンマンと南斗水鳥拳伝承者のレイのように生きていきたいと思います。"
+    "birthplace": {
+      "ja": "品川区にある八潮団地",
+      "en": "Yashio Housing Complex in Shinagawa Ward"
+    },
+    "hobby": {
+      "ja": "下駄の音を響かせること",
+      "en": "Making the sound of wooden clogs resonate"
+    },
+    "others": {
+      "ja": "一言　アンパンマンと南斗水鳥拳伝承者のレイのように生きていきたいと思います。",
+      "en": "I want to live like Anpanman and Rei, the successor of Nanto Suichoken."
+    }
   },
   {
     "id": "2",
-    "mainWork": "最高情報責任者",
-    "works": "最高情報責任者/開発マネージャー/フロントエンジニア",
+    "mainWork": {
+      "ja": "最高情報責任者",
+      "en": "CIO"
+    },
+    "works": {
+      "ja": "最高情報責任者/開発マネージャー/フロントエンジニア",
+      "en": "CIO/Development Manager/Frontend Engineer"
+    },
     "name": "マヘル",
     "imageSrc": "/images/members/m2.png",
-    "birthplace": "シリア",
-    "hobby": "サッカー、ドライブ",
-    "others": "常に全力を尽くし、スキルの向上を決して止めません。"
+    "birthplace": {
+      "ja": "シリア",
+      "en": "Syria"
+    },
+    "hobby": {
+      "ja": "サッカー、ドライブ",
+      "en": "Soccer, Driving"
+    },
+    "others": {
+      "ja": "常に全力を尽くし、スキルの向上を決して止めません。",
+      "en": "I always give my best effort and never stop improving my skills."
+    }
   },
   {
     "id": "3",
-    "mainWork": "最高技術責任者",
-    "works": "最高技術責任者 /AIスペシャリスト",
+    "mainWork": {
+      "ja": "最高技術責任者",
+      "en": "CTO"
+    },
+    "works": {
+      "ja": "最高技術責任者 /AIスペシャリスト",
+      "en": "CTO/AI Specialist"
+    },
     "name": "イスカンダル",
     "imageSrc": "/images/members/m3.png",
-    "birthplace": "ヤブルード（シリア）",
-    "hobby": "飲酒、社交、バイブコーディング",
-    "others": "はい、私たちならできます。"
+    "birthplace": {
+      "ja": "ヤブルード（シリア）",
+      "en": "Yabroud, Syria"
+    },
+    "hobby": {
+      "ja": "飲酒、社交、バイブコーディング",
+      "en": "Drinking, Socializing, Vibe Coding"
+    },
+    "others": {
+      "ja": "はい、私たちならできます。",
+      "en": "Yes, we can do it."
+    }
   },
   {
     "id": "4",
-    "mainWork": "プロジェクトマネージャー",
-    "works": "プロジェクトマネージャー/ちりの通訳",
+    "mainWork": {
+      "ja": "プロジェクトマネージャー",
+      "en": "Project Manager"
+    },
+    "works": {
+      "ja": "プロジェクトマネージャー/ちりの通訳",
+      "en": "Project Manager/Chiri's Interpreter"
+    },
     "name": "ゆーか",
     "imageSrc": "/images/members/m5.png",
-    "birthplace": "山口県下関市",
-    "hobby": "バックパッカー、ピアノ、球技",
-    "others": "いつかシリアに行ける日を夢見て、アラビア語を練習中（笑）"
+    "birthplace": {
+      "ja": "山口県下関市",
+      "en": "Shimonoseki City, Yamaguchi Prefecture"
+    },
+    "hobby": {
+      "ja": "バックパッカー、ピアノ、球技",
+      "en": "Backpacking, Piano, Ball Games"
+    },
+    "others": {
+      "ja": "いつかシリアに行ける日を夢見て、アラビア語を練習中（笑）",
+      "en": "Dreaming of the day I can visit Syria, currently practicing Arabic (laugh)"
+    }
   },
   {
     "id": "5",
-    "mainWork": "ディレクター",
-    "works": "ディレクター/デザイナー",
+    "mainWork": {
+      "ja": "ディレクター",
+      "en": "Director"
+    },
+    "works": {
+      "ja": "ディレクター/デザイナー",
+      "en": "Director/Designer"
+    },
     "name": "だい",
     "imageSrc": "/images/members/m6.png",
-    "birthplace": "愛知県名古屋市",
-    "hobby": "筋トレ、海外旅行、スポーツ観戦",
-    "others": "素晴らしい体験と喜びを共有できるように、会社一同誠心誠意対応させていただきます。"
+    "birthplace": {
+      "ja": "愛知県名古屋市",
+      "en": "Nagoya City, Aichi Prefecture"
+    },
+    "hobby": {
+      "ja": "筋トレ、海外旅行、スポーツ観戦",
+      "en": "Weight Training, Overseas Travel, Sports Watching"
+    },
+    "others": {
+      "ja": "素晴らしい体験と喜びを共有できるように、会社一同誠心誠意対応させていただきます。",
+      "en": "We will respond with sincerity so that we can share wonderful experiences and joy together."
+    }
   },
   {
     "id": "6",
-    "mainWork": "バックエンドエンジニア",
-    "works": "バックエンドエンジニア",
+    "mainWork": {
+      "ja": "バックエンドエンジニア",
+      "en": "Backend Engineer"
+    },
+    "works": {
+      "ja": "バックエンドエンジニア",
+      "en": "Backend Engineer"
+    },
     "name": "イスマエル",
     "imageSrc": "/images/members/dm.png",
-    "birthplace": "シリアのハマ県サラミヤ市",
-    "hobby": "サッカー、ドライブ",
-    "others": "私たちは、お客様のニーズを満たし、お客様の成功をサポートするソリューションを提供することに専念しています。"
+    "birthplace": {
+      "ja": "シリアのハマ県サラミヤ市",
+      "en": "Salamiyah, Hama Governorate, Syria"
+    },
+    "hobby": {
+      "ja": "サッカー、ドライブ",
+      "en": "Soccer, Driving"
+    },
+    "others": {
+      "ja": "私たちは、お客様のニーズを満たし、お客様の成功をサポートするソリューションを提供することに専念しています。",
+      "en": "We are dedicated to providing solutions that meet our customers' needs and support their success."
+    }
   },
   {
     "id": "7",
-    "mainWork": "バックエンドエンジニア",
-    "works": "バックエンドエンジニア",
-    "name": "ハビブ",
-    "imageSrc": "/images/members/dm.png",
-    "birthplace": "シリアのヤブルー",
-    "hobby": "読書、お酒",
-    "others": "どんな案件でもWelcomeです！"
+    "mainWork": {
+      "ja": "フロントエンドエンジニア",
+      "en": "Frontend Engineer"
+    },
+    "works": {
+      "ja": "フロントエンドエンジニア",
+      "en": "Frontend Engineer"
+    },
+    "name": "レゼック",
+    "imageSrc": "/images/members/rezk.jpg",
+    "birthplace": {
+      "ja": "シリアのホムス市",
+      "en": "Homs City, Syria"
+    },
+    "hobby": {
+      "ja": "旅行、チェス、パズル",
+      "en": "Travel, Chess, Puzzles"
+    },
+    "others": {
+      "ja": "一緒に仕事をし、素晴らしい結果を出せることを楽しみにしています！",
+      "en": "I look forward to working together and achieving great results!"
+    }
+  },
+  {
+    "id": "7",
+    "mainWork": {
+      "ja": "バックエンドエンジニア",
+      "en": "Backend Engineer"
+    },
+    "works": {
+      "ja": "バックエンドエンジニア",
+      "en": "Backend Engineer"
+    },
+    "name": "ムニール",
+    "imageSrc": "/images/members/moneer.jpeg",
+    "birthplace": {
+      "ja": "---",
+      "en": "---"
+    },
+    "hobby": {
+      "ja": "---",
+      "en": "---"
+    },
+    "others": {
+      "ja": "---",
+      "en": "---"
+    }
   },
   {
     "id": "8",
-    "mainWork": "フロントエンドエンジニア",
-    "works": "フロントエンドエンジニア",
-    "name": "レゼック",
+    "mainWork": {
+      "ja": "バックエンドエンジニア",
+      "en": "Backend Engineer"
+    },
+    "works": {
+      "ja": "バックエンドエンジニア",
+      "en": "Backend Engineer"
+    },
+    "name": "マリオ",
+    "imageSrc": "/images/members/mario.jpeg",
+    "birthplace": {
+      "ja": "---",
+      "en": "---"
+    },
+    "hobby": {
+      "ja": "睡眠、チェス、サッカー",
+      "en": "Sleeping, chess, soccer"
+    },
+    "others": {
+      "ja": "私のチームが成功するプロジェクトを構築するのを助ける",
+      "en": "Help my team build successful projects"
+    }
+  },
+  {
+    "id": "9",
+    "mainWork": {
+      "ja": "バックエンドエンジニア",
+      "en": "Backend Engineer"
+    },
+    "works": {
+      "ja": "バックエンドエンジニア",
+      "en": "Backend Engineer"
+    },
+    "name": "ヘデラ",
     "imageSrc": "/images/members/dm.png",
-    "birthplace": "シリアのホムス市",
-    "hobby": "旅行、チェス、パズル",
-    "others": "一緒に仕事をし、素晴らしい結果を出せることを楽しみにしています！"
+    "birthplace": {
+      "ja": "---",
+      "en": "---"
+    },
+    "hobby": {
+      "ja": "---",
+      "en": "---"
+    },
+    "others": {
+      "ja": "---",
+      "en": "---"
+    }
   }
 ]

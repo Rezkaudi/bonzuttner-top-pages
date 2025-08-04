@@ -2,13 +2,16 @@ import Container from "@/shared-components/Container";
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { useTranslations } from 'next-intl';
 
 const OtherContents = () => {
+    const t = useTranslations('recruit.otherContents');
+
     return (
         <section>
             <Container className="flex items-center flex-col mt-[50px] lg:mt-[100px]">
                 <h1 className="text-xl lg:text-[32px] font-medium leading-10 mb-6">
-                    OTHER CONTENTS
+                    {t('title')}
                 </h1>
                 <div className="w-full max-w-4xl gap-5 flex flex-1 sm:items-center items-start justify-between rounded-3xl flex-col sm:flex-row mb-20">
                     <div className="sm:w-2/5 w-full">

@@ -1,0 +1,468 @@
+{
+  "common": {
+    "loading": "Loading...",
+    "readMore": "READ MORE",
+    "backToList": "Back to List",
+    "contact": "CONTACT",
+    "contactUs": "Feel free to contact us",
+    "formContact": "Contact via Form"
+  },
+  "navigation": {
+    "top": "TOP",
+    "topSub": "Top Page",
+    "story": "STORY",
+    "storySub": "Story",
+    "service": "OUR SERVICE",
+    "serviceSub": "Service Content",
+    "topics": "TOPICS",
+    "topicsSub": "Topics",
+    "member": "MEMBER",
+    "memberSub": "Members",
+    "company": "COMPANY",
+    "companySub": "Company Information",
+    "recruit": "RECRUIT",
+    "recruitSub": "Recruitment Information",
+    "contact": "CONTACT",
+    "contactSub": "Contact Us",
+    "productDev": "Product Development",
+    "handsOnSupport": "Hands-on Support",
+    "creative": "Creative"
+  },
+  "home": {
+    "heroTagline": "The Makers of Tomorrow:",
+    "heroTagline2": "Transforming Challenges into Social Assets.",
+    "heroTitle1": "Creating the Future,",
+    "heroTitle2": "New Leaders of Society",
+    "heroDescription1": "BonZuttner believes that the diversity and experience of refugees can enrich society,",
+    "heroDescription2": "and we tackle global social issues through businesses that 'foster potential' in people.",
+
+    "storyTitle": "Journey through BonZuttner's story to embark on a journey to create the future",
+    "storyDescription": "Here you can learn everything about the company!? Why was BonZuttner born?, BonZuttner's philosophy and vision for the future, you can deeply understand our history and efforts to solve social issues. Please slide to see other pages as well.",
+
+    "serviceTitle": "OUR SERVICE",
+    "serviceDescription": "BonZuttner provides services that discover and solve customer business issues with cutting-edge technology and creativity, while also contributing to solving refugee problems. Through three pillars: 'Product Development', 'Hands-on Support', and 'Creative', we leverage technology and imagination to create new value for society and business.",
+
+    "topicsTitle": "TOPICS",
+    "memberTitle": "MEMBER",
+    "memberDescription": "BonZuttner strives daily to create a better society together with members from diverse backgrounds. We have Japanese colleagues and those with Syrian roots, and each of our members shares experiences, culture, and values while creating new ideas to deliver to everyone.",
+    "aboutUsTitle": "ABOUT US",
+    "aboutUsDescription": "BonZuttner is a social business company that aims to transform social issues into value. Please see our mission, vision, values, and future aspirations.",
+    "companyTitle": "COMPANY",
+    "companyDescription": "BonZuttner's journey and values toward a sustainable future. Learn about our initiatives along with the philosophy that underlies them.",
+    "recruitTitle": "RECRUIT",
+    "recruitDescription": "At BonZuttner, we seek colleagues with innovation and passion. Let's respect diversity and create new value together. Here is your next stage to expand your possibilities."
+  },
+  "footer": {
+    "companyName": "BonZuttner Inc.",
+    "address1": "4-20-3 Ebisu, Shibuya-ku, Tokyo",
+    "address2": "Ebisu Garden Place Tower 27F COEBI",
+    "copyright": "Copyright © BonZuttner, Inc. All Rights Reserved.",
+    "privacyPolicy": "Privacy Policy",
+    "personalInfo": "Personal Information Handling"
+  },
+  "privacy": {
+    "title": "Privacy Policy",
+    "subtitle": "Personal Information Protection Policy",
+    "breadcrumb": "PRIVACY POLICY",
+    "introduction": "BonZuttner Inc. (hereinafter referred to as 'the Company') establishes the following Privacy Policy (hereinafter referred to as 'this Policy') regarding the handling of users' personal information in the services provided on this website (hereinafter referred to as 'this Service').",
+    "article1": {
+      "title": "Article 1 (Personal Information)",
+      "content": "'Personal Information' refers to 'personal information' as defined in the Personal Information Protection Act, and refers to information about living individuals that can identify specific individuals through names, dates of birth, addresses, telephone numbers, contact information and other descriptions contained in such information, as well as data relating to appearance, fingerprints, voiceprints, and information that can identify specific individuals from such information alone (personal identification information)."
+    },
+    "article2": {
+      "title": "Article 2 (Collection Method of Personal Information)",
+      "content": "The Company may ask for personal information such as name, date of birth, address, telephone number, email address, bank account number, credit card number, driver's license number, etc. when users register for use. In addition, transaction records and payment information containing users' personal information made between users and partners may be collected from the Company's partners (including information providers, advertisers, advertisement distributors, etc., hereinafter referred to as 'Partners')."
+    },
+    "article3": {
+      "title": "Article 3 (Purpose of Collecting and Using Personal Information)",
+      "intro": "The purposes for which the Company collects and uses personal information are as follows:",
+      "items": "1. To provide and operate the Company's services\n2. To respond to inquiries from users (including identity verification)\n3. To send emails about new features, updates, campaigns, etc. of services being used by users and other services provided by the Company\n4. For necessary contact such as maintenance and important notices\n5. To identify users who violate the terms of use or attempt to use services for fraudulent or improper purposes and refuse their use\n6. To allow users to view, change, delete their registration information and view their usage status\n7. To bill users for usage fees in paid services\n8. Purposes incidental to the above usage purposes"
+    },
+    "article4": {
+      "title": "Article 4 (Change of Purpose of Use)",
+      "content": "1. The Company shall change the purpose of use of personal information only when it is reasonably recognized that the purpose of use is related to the purpose before the change.\n2. When the purpose of use is changed, the Company shall notify users of the changed purpose by the method prescribed by the Company or publish it on this website."
+    },
+    "article5": {
+      "title": "Article 5 (Provision of Personal Information to Third Parties)",
+      "intro": "1. The Company will not provide personal information to third parties without obtaining prior consent from users, except in the following cases. However, this excludes cases permitted by the Personal Information Protection Act and other laws.",
+      "items": "a. When it is necessary for the protection of human life, body or property and it is difficult to obtain the consent of the person\nb. When it is particularly necessary for improving public health or promoting the sound development of children and it is difficult to obtain the consent of the person\nc. When it is necessary to cooperate with national institutions, local governments, or their commissioned parties in carrying out affairs stipulated by laws and regulations, and obtaining the consent of the person may hinder the performance of such affairs\nd. When the following matters are notified or published in advance and the Company has reported to the Personal Information Protection Commission",
+      "conclusion": "2. Notwithstanding the provisions of the preceding paragraph, in the following cases, the recipient of such information shall not be considered a third party.",
+      "exceptions": "a. When the Company entrusts all or part of the handling of personal information within the scope necessary to achieve the purpose of use\nb. When personal information is provided in connection with business succession due to merger or other reasons\nc. When personal information is jointly used with specific parties, and the fact, the items of personal information to be jointly used, the scope of joint users, the purpose of use by the users, and the name or title of the person responsible for managing the personal information are notified to the person in advance or made easily accessible to the person"
+    },
+    "article6": {
+      "title": "Article 6 (Disclosure of Personal Information)",
+      "content": "1. When requested by the person to disclose personal information, the Company will disclose it to the person without delay. However, if disclosure would fall under any of the following cases, all or part of it may not be disclosed, and if a decision is made not to disclose, the person will be notified without delay.\n2. Notwithstanding the provisions of the preceding paragraph, information other than personal information such as history information and characteristic information will not be disclosed in principle."
+    },
+    "article7": {
+      "title": "Article 7 (Correction and Deletion of Personal Information)",
+      "content": "1. If the personal information held by the Company about the user is incorrect, the user may request the Company to correct, add or delete the personal information (hereinafter referred to as 'correction, etc.') according to the procedures established by the Company.\n2. When the Company receives a request from a user under the preceding paragraph and determines that it is necessary to respond to the request, it shall make corrections, etc. to the personal information without delay.\n3. When the Company makes corrections, etc. based on the provisions of the preceding paragraph, or when it decides not to make corrections, etc., it shall notify the user without delay."
+    },
+    "article8": {
+      "title": "Article 8 (Suspension of Use of Personal Information)",
+      "content": "1. When the Company is requested by the person to suspend or delete the use of personal information (hereinafter referred to as 'suspension of use, etc.') on the grounds that the personal information is being handled beyond the scope of the purpose of use or was obtained by fraudulent means, the Company will conduct necessary investigations without delay.\n2. Based on the results of the investigation in the preceding paragraph, if it is determined that it is necessary to respond to the request, the Company will suspend the use of the personal information without delay.\n3. When the Company suspends the use, etc. based on the provisions of the preceding paragraph, or when it decides not to suspend the use, etc., it shall notify the user without delay.\n4. Notwithstanding the preceding two paragraphs, if suspension of use, etc. involves significant costs or is otherwise difficult to implement, and alternative measures necessary to protect the user's rights and interests can be taken, such alternative measures shall be implemented."
+    },
+    "article9": {
+      "title": "Article 9 (Changes to Privacy Policy)",
+      "content": "1. The contents of this Policy may be changed without notifying users, except for matters otherwise specified in laws and regulations and this Policy.\n2. Except when otherwise determined by the Company, the changed Privacy Policy shall take effect from the time it is posted on this website."
+    },
+    "article10": {
+      "title": "Article 10 (Contact Information)",
+      "content": "For inquiries regarding this Policy, please contact the following:\nAddress: 4-20-3 Ebisu, Shibuya-ku, Tokyo, Ebisu Garden Place Tower 27F COEBI\nCompany Name: BonZuttner Inc.\nRepresentative Director: Yuki Sakashita\nEmail Address: info@bonzuttner.com\nEnd"
+    }
+  },
+  "story": {
+    "hero": {
+      "title": "Story",
+      "subtitle": "~This company has a worldview that even refugees can enjoy living in~",
+      "subtitleEn": "This company has a worldview that even refugees can enjoy living in.",
+      "content": "What images come to mind when you hear the word 'refugee'?\nMany Japanese people probably think of negative words such as 'miserable', 'pitiful', and 'difficult'.\nHowever, we at BonZuttner think positively,\nand they are 'individual human beings' who, like us, each have different names, personalities, hobbies, and special skills.\nPeople cannot choose the country they are born in or the environment they grow up in.\nThey are human beings who must live just like us, only differing in the country they were born in and the environment they grew up in.\nWe at BonZuttner shake off those preconceptions and are a\n'social business' company where even refugees can live and work happily.\nOur business model does not engage in businesses where profitability and sociality conflict,\nbut is a business model that prioritizes solving social problems.\n'Creating new value from the energetic spirit that can run around the world'\nFrom the thoughts hidden in our logo, we will continue to deliver a worldview where even refugees can live happily\nfrom this BonZuttner to everyone."
+    },
+    "companyOrigin": {
+      "title": "COMPANY ORIGIN",
+      "nameOrigin": "'Bon' (French for good, excellent, well-made) \n 'Zutt' (Japanese for always, continuously) \n 'Er' (English for person who does something)",
+      "meaning": "A person who continues to strive to be good, \n and acts accordingly",
+      "description": "The company name is derived from 'Bertha von Suttner'. She was the first woman to receive the Nobel Peace Prize, and as a symbol of the concept of 'peace', we pay our respects to her and borrowed her name to name our company 'BonZuttner'.\nEven in the real world where there are various conflicts and obstacles, we as a social business company value 'peace of mind', and refugees and displaced persons should not lose their professional skills and earning power as human beings, nor should their identity and core of life be destroyed.\nWe maintain a positive attitude, firmly nurture our moral and ethical values, always maintain the attitude of trying to become good people, and aim to solve 'social problems'.",
+      "companyButton": "COMPANY"
+    },
+    "concept": {
+      "title": "CONCEPT",
+      "subtitle": "Breaking down refugee barriers through universal language",
+      "heading": "Human resources that Japan can be proud of to the world.",
+      "description": "We at BonZuttner aim to discover and solve our customers' business issues through the power of WEB/IT, while also contributing to solving refugee problems. \n Technologies such as WEB/IT including programming and blockchain are universal languages, \n and we want our customers to feel firsthand that our engineers with refugee backgrounds also possess world-class technology. \n Since our colleagues want to contribute to Syrian reconstruction through business, \n we are a company specializing in Middle Eastern IT engineers, led by Syrians, and we sincerely work with our customers to bring about a better future for them. \n Since we actually participate in meetings and discussions with Japanese clients and perform a wide range of tasks from upstream to downstream processes, we would like you to experience not only WEB/IT technology but also refugee experiences and empowerment, and communicate with us as 'individual human beings'."
+    },
+    "purposeStatement": {
+      "title": "PURPOSE STATEMENT",
+      "heading": "Three 'Re.'",
+      "refugeeTitle": "Refugee",
+      "restart": "Restart",
+      "recreate": "Recreate",
+      "rebuild": "Rebuild",
+      "rebuildDesc": "Rebuild: Reconstructing new life, environment, and connections",
+      "recreateDesc": "Recreate: Creating a new future",
+      "restartDesc": "Restart: After Rebuild and Recreate, towards a new start.",
+      "mission": "To remove the label of 'refugee' and become a company where everyone can recognize each other, in order to bring out the diversity of society.",
+      "description": "We are not refugees, but Returnees, Rebuilders, Recreators and Restarters. \n In Japanese translation, this is expressed as 'those who travel' aiming for 'reconstruction', 'recreation', and 'restart'. \n There are constant changes in the world, and it's not just our society that undergoes metabolism. \n The same is true for refugees. \n We at BonZuttner keep this feeling in our hearts, \n and sincerely face our customers."
+    },
+    "theFuture": {
+      "title": "THE FUTURE",
+      "motto": "To be able to hold hands,\n look forward,\n and gaze into the light.",
+      "description": "What we at BonZuttner aim for is to become 'beings who can hold hands, look forward, and gaze into the light'.\n Whether refugees or Japanese, as human beings, we are a company that aims to create a society where people can equally enjoy minimum rights and life, and to save those who are in the midst of suffering. We continue to grow constantly, have a sense of ownership and professionalism, and aim to be a company that can be happy with everyone by staying close to all people involved, including staff, customers, and those who watch us."
+    },
+    "otherContents": {
+      "title": "OTHER CONTENTS",
+      "ourService": "OUR SERVICE",
+      "company": "COMPANY"
+    },
+    "contact": {
+      "title": "CONTACT",
+      "subtitle": "Please feel free to contact us",
+      "buttonText": "Contact us via form"
+    },
+    "items": {
+      "story": {
+        "title": "STORY",
+        "description": "BonZuttner was born in 2019 and has been working to solve refugee and social problems. What kind of future are we envisioning to continue solving these problems? You can learn everything about BonZuttner."
+      },
+      "topics": {
+        "title": "TOPICS",
+        "description": "BonZuttner's latest information is shared here. In addition to events and media information, we also share various information such as news and columns."
+      },
+      "projects": {
+        "title": "Projects",
+        "description": "Currently, BonZuttner is developing new services that will delight our customers. It will be a unique service that is very BonZuttner-like, so please look forward to it!!"
+      }
+    }
+  },
+  "topics": {
+    "title": "TOPICS",
+    "subtitle": "Topics",
+    "breadcrumb": "TOP - TOPICS",
+    "all": "ALL",
+    "noTopicsFound": "No topics found."
+  },
+  "recruit": {
+    "hero": {
+      "title": "RECRUIT",
+      "subtitle": "Recruitment Information",
+      "breadcrumb": "TOP - RECRUIT"
+    },
+    "section2": {
+      "title": "The world is vast. That's why, dive in even more!!",
+      "content": "When you travel, you encounter landscapes you've never seen, languages you've never heard, and cultures you've never touched.\nDon't you feel excited when you step into an unknown world?\nBonZuttner seeks people with such curiosity and action.\nOur goal is to transform refugee issues into 'social assets'.\nTo transcend differences in nationality and culture and create new value.\nIt's okay if you don't speak English. What matters is the pure desire to 'know the unknown world'.\nPeople who enjoy encountering different cultures, who can enjoy meeting people while traveling abroad.\nYour sensibility will create BonZuttner's future.\nNot because they're refugees, not because they're foreigners, not because their culture is different.\nRather than drawing such lines, we want to meet people who can interact with anyone on equal terms and face them as companions to create the future together.\nCome on, let's enjoy the world more. Let's take a step forward with BonZuttner."
+    },
+    "section3": {
+      "title": "Job Requirements",
+      "noHiring": "We are currently not hiring."
+    },
+    "otherContents": {
+      "title": "OTHER CONTENTS"
+    },
+    "contact": {
+      "title": "CONTACT",
+      "subtitle": "Feel free to contact us",
+      "buttonText": "Contact via Form"
+    }
+  },
+  "members": {
+    "hero": {
+      "title": "Members",
+      "subtitle": "Member Introduction",
+      "breadcrumb": "TOP - MEMBER",
+      "heading": "A team that creates new value through diverse backgrounds.",
+      "description": "BonZuttner brings together members who share a common desire to 'pursue dreams, enjoy daily life, and contribute to society,' even though they come from different countries and environments. We introduce our colleagues who laugh, learn, and continue to grow together despite having various backgrounds."
+    },
+    "memberCard": {
+      "birthplace": "Birthplace",
+      "hobby": "Hobbies",
+      "comment": "Comment",
+      "backToList": "Back to List"
+    },
+    "otherContents": {
+      "title": "OTHER CONTENTS"
+    },
+    "contact": {
+      "title": "CONTACT",
+      "subtitle": "Feel free to contact us",
+      "buttonText": "Contact via Form"
+    }
+  },
+  "company": {
+    "hero": {
+      "title": "COMPANY",
+      "subtitle": "Company Information",
+      "breadcrumb1": "TOP",
+      "breadcrumb2": "COMPANY"
+    },
+    "message": {
+      "sectionTitle": "MESSAGE",
+      "ceoImageAlt": "CEO portrait",
+      "title": "Not as refugees, but as colleagues. The challenge to change the world.",
+      "content": "<p>The background to my founding this company stems from the reality I witnessed through volunteer refugee support work. Amid the economic crisis caused by the Syrian civil war, many people with high IT skills were unable to find work opportunities and were receiving unfairly low wages.</p><p>However, their skills are world-class.</p><p>Properly evaluating this talent and creating an environment where they can work with pride. And creating a system where they can contribute to society while helping the next generation of colleagues. With these thoughts in mind, I established BonZuttner in 2019.</p><p>\"Refugee\" is just a label. To me, they are friends, neighbors, and colleagues who create the future together. Regardless of cultural or national differences, I want to create a place where we can respect each other and grow together.</p><p>BonZuttner is a company that focuses on system development while tackling social issues. We will continue to create new services for the future and aim to be a bridge to solving social challenges including refugee issues.</p><p>If you sympathize with our thoughts and want to jump into a new world. If you want to enjoy different cultures while taking on challenges together. Please join us as a colleague at BonZuttner to create the future together.</p>"
+    },
+    "companyImages": {},
+    "mission": {
+      "sectionTitle": "MISSION・VISION・VALUE",
+      "mission": {
+        "title": "MISSION",
+        "subTitle": "Turning 'refugee issues' into 'social assets'.",
+        "content": "We aim to utilize refugees not as 'people to be helped' but as valuable assets to society. BonZuttner becomes a bridge to create a sustainable future by working, learning, and growing together with refugees."
+      },
+      "vision": {
+        "title": "VISION",
+        "subTitle": "Talent knows no borders. Unleashing global potential.",
+        "content": "BonZuttner creates a new future beyond countries and cultures through technology and human power. We aim to realize a society where diverse talents can thrive without being bound by the label of 'refugee', making the world richer and more interesting."
+      },
+      "value": {
+        "title": "VALUE",
+        "subTitle": "\"Co-creation\"・\"Challenge\"・\"Trust\"・\"Innovation\"",
+        "content": "Together with colleagues from diverse backgrounds, we create new value, face social issues head-on, and continuously seek new solutions. We also build an environment where we can grow in flat relationships while respecting each other, creating the future by maximizing the power of technology and opening up new possibilities with a global mindset that embraces diversity."
+      }
+    },
+    "profile": {
+      "sectionTitle": "COMPANY PROFILE",
+      "companyName": {
+        "title": "Company Name",
+        "content": "BonZuttner Inc."
+      },
+      "address": {
+        "title": "Address",
+        "content": "27F COEBI, Ebisu Garden Place Tower, 4-20-3 Ebisu, Shibuya-ku, Tokyo"
+      },
+      "establishmentDate": {
+        "title": "Date of Establishment",
+        "content": "July 8, 2019"
+      },
+      "ceo": {
+        "title": "CEO",
+        "content": "Yuki Sakashita"
+      },
+      "businessContent": {
+        "title": "Business Content",
+        "content": "System Development"
+      },
+      "bank": {
+        "title": "Bank",
+        "content": "Sumitomo Mitsui Banking Corporation"
+      },
+      "supportingOrganizations": {
+        "title": "Supporting Organizations",
+        "content": "Welcome Japan General Incorporated Association, WELgee Specified Nonprofit Corporation"
+      }
+    },
+    "otherContents": {
+      "sectionTitle": "OTHER CONTENTS",
+      "story": "STORY",
+      "member": "MEMBER",
+      "arrowAlt": "arrow right"
+    },
+    "contact": {
+      "title": "CONTACT",
+      "subtitle": "Please feel free to contact us",
+      "buttonText": "Contact via form",
+      "arrowAlt": "arrow left"
+    }
+  },
+  "contact": {
+    "hero": {
+      "title": "CONTACT",
+      "subtitle": "Contact Us",
+      "description": {
+        "line1": "Please fill in the required fields",
+        "line2": "and click the \"Confirm\" button at the bottom."
+      },
+      "breadcrumb1": "TOP",
+      "breadcrumb2": "CONTACT"
+    },
+    "inquiry": {
+      "validation": {
+        "requiredFields": "Please fill in all required fields.",
+        "unknownError": "Unknown error",
+        "networkError": "An error occurred. Please check your network connection."
+      },
+      "successMessage": "Your inquiry has been submitted!",
+      "errorMessage": "Submission failed",
+      "form": {
+        "required": "required",
+        "inquiryType": {
+          "label": "Type of Inquiry",
+          "placeholder": "Please select",
+          "options": {
+            "media": "About media coverage",
+            "service": "Service consultation",
+            "other": "Other"
+          }
+        },
+        "name": {
+          "label": "Name",
+          "placeholder": "Please enter your name"
+        },
+        "furigana": {
+          "label": "Furigana",
+          "placeholder": "Please enter furigana"
+        },
+        "email": {
+          "label": "Email",
+          "placeholder": "Please enter your email"
+        },
+        "number": {
+          "label": "Phone Number",
+          "placeholder": "Please enter your phone number"
+        },
+        "companyName": {
+          "label": "Company Name",
+          "placeholder": "Please enter your company name"
+        },
+        "address": {
+          "label": "Address",
+          "placeholder": "Please enter your address"
+        },
+        "inquiryDetails": {
+          "label": "Inquiry Details",
+          "placeholder": "Please enter your inquiry details"
+        },
+        "agreementText": "regarding our",
+        "agree": {
+          "label": "I agree"
+        },
+        "submitButton": "Submit"
+      }
+    }
+  },
+  "creative": {
+    "hero": {
+      "title": "Creative",
+      "subtitle": "Creativity",
+      "tags": "Web Design, App Development, UI/UX, Graphics",
+      "images": {
+        "leftAlt": "Creative left image",
+        "rightAlt": "Creative right image"
+      }
+    },
+    "about": {
+      "title": "As your partner, we deliver <highlight>Humor</highlight> and <bold>Humorous</bold> experiences.",
+      "description": "As a social business, we prioritize solving social issues. We help solve your current business challenges from multiple perspectives and enhance your future value through CREATIVE consulting that gets to the essence. To share and experience joy with our clients, we aim not just for 'creation' but for lasting relationships that can overcome future challenges together.",
+      "imageAlt": "Creative about image"
+    },
+    "services": {
+      "title": "What BonZuttner Can Solve",
+      "subtitle": "BonZuttner's CREATIVE aims for \"Future-Driven Creativity\"\n\nBy fusing creativity that expands future possibilities with business, we strive to guide users to solutions.",
+      "bgAlt": "Services background",
+      "service1": {
+        "title": "01 Website Creation & Operation",
+        "description": "Maximizing brand value with intuitive design and optimal UI/UX. We provide comprehensive support including SEO measures, multilingual support, and operational support."
+      },
+      "service2": {
+        "title": "02 App Development",
+        "description": "From planning to development and operation of iOS/Android apps. Our strength lies in designs that balance usability with solving business challenges."
+      },
+      "service3": {
+        "title": "03 System Development",
+        "description": "Custom system development contributing to operational efficiency and DX advancement. We provide optimal proposals considering cloud compatibility and security aspects."
+      },
+      "service4": {
+        "title": "04 Translation & Multilingual Support",
+        "description": "Localization considering cultural backgrounds. Combining machine translation with human checks, we achieve both natural expression and accuracy."
+      },
+      "service5": {
+        "title": "05 Web Create",
+        "description": "Bringing out corporate individuality and creating brand identity and design rules that resonate with targets. We provide total support from logos to visuals and tone & manner design."
+      },
+      "service6": {
+        "title": "06 Web Create",
+        "description": "Planning and producing content like articles, videos, and SNS content to deliver stories that move targets. Combined with marketing strategy for maximum effect."
+      }
+    },
+    "flow": {
+      "title": "FLOW",
+      "steps": {
+        "step1": {
+          "step": "STEP01",
+          "title": "Hearing & Quotation",
+          "content": "We document objectives and implementation methods. We organize business strategy and clarify issues solvable through web."
+        },
+        "step2": {
+          "step": "STEP02",
+          "title": "Strategy Design",
+          "content": "We design the framework to execute strategy, including content, design direction, site structure, functions, and wireframes."
+        },
+        "step3": {
+          "step": "STEP03",
+          "title": "Design & Production",
+          "content": "We complete the appearance and create designs based on the determined strategy and design. After design completion, we implement and publish the site when production is complete."
+        },
+        "step4": {
+          "step": "STEP04",
+          "title": "Operation",
+          "content": "Post-publication support includes effect verification, improvement measures, additional updates, lectures/advice to operators, content creation, and effective operation."
+        }
+      }
+    },
+    "works": {
+      "slide1": {
+        "title": "WORKS",
+        "client": "Tokyo Denki University",
+        "department": "System Design Engineering Department"
+      },
+      "slide2": {
+        "title": "WORKS",
+        "client": "Misato City Junior Baseball Federation",
+        "department": "Baseball Site"
+      },
+      "prevAlt": "Previous slide",
+      "nextAlt": "Next slide",
+      "imageAlt": "Work image"
+    },
+    "otherContents": {
+      "title": "OTHER CONTENTS",
+      "link1": "Product Development",
+      "link2": "Hands-on Support",
+      "arrowAlt": "Arrow right"
+    },
+    "contact": {
+      "title": "CONTACT",
+      "subtitle": "Please feel free to contact us",
+      "buttonText": "Contact via form",
+      "arrowAlt": "Arrow left"
+    }
+  }
+}

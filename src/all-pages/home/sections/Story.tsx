@@ -9,38 +9,41 @@ import 'swiper/css/pagination';
 import Image from "next/image";
 import { Button } from "@nextui-org/react";
 import { useRouter } from "next/navigation";
+import { useTranslations, useLocale } from 'next-intl';
 
 const Story = () => {
-    const router = useRouter()
-
-    const p1 = "ここで会社の全てがわかる！？\n なぜBonZuttnerが誕生したのか？、BonZuttnerの理念・未来へのビジョン、私たちの歴史や社会課題解決への取り組みを深く知ることができます。\n スライドして是非他のページもご覧ください。"
+    const router = useRouter();
+    const t = useTranslations('home');
+    const storyT = useTranslations('story.items');
+    const commonT = useTranslations('common');
+    const locale = useLocale();
 
     const stories = [
         {
             id: "01",
-            title: "STORY",
+            title: storyT('story.title'),
             imageSrc: "/images/story01.png",
-            describtion: "BonZuttnerは2019年に誕生し、難民問題や社会問題の解決を目指してきました。これからもそれらの問題を解決していくためにどのような未来を描いているのか。BonZuttnerの全てを知ることができます。",
-            href: "/story",
+            describtion: storyT('story.description'),
+            href: `/${locale}/story`,
             categoryId: "",
             name: ""
         },
         {
             id: "02",
-            title: "TOPICS",
+            title: storyT('topics.title'),
             imageSrc: "/images/story02.png",
-            describtion: "BonZuttnerの最新情報はこちらで発信しております。イベントやメディア情報の他にもニュースやコラム等、様々な情報を発信しております。",
-            href: "/topics",
+            describtion: storyT('topics.description'),
+            href: `/${locale}/topics`,
             categoryId: "",
             name: ""
 
         },
         {
             id: "03",
-            title: "Projects",
+            title: storyT('projects.title'),
             imageSrc: "/images/story03.png",
-            describtion: "現在BonZuttnerではお客様に喜んでいただける新サービスを開発しております。BonZuttnerらしいユニークなサービスとなっておりますので、乞うご期待！！",
-            href: "/topics",
+            describtion: storyT('projects.description'),
+            href: `/${locale}/topics`,
             categoryId: "",
             name: ""
         }
@@ -61,9 +64,9 @@ const Story = () => {
     return (
         <section className="min-h-screen bg-gradient-to-b-from-transparent relative" id="story">
             <Container className="py-12 lg:pt-24">
-                <h2 className="text-white font-medium text-xl lg:text-4xl">BonZuttnerの物語を巡りながら、未来をつくる旅へ</h2>
+                <h2 className="text-white font-medium text-xl lg:text-4xl">{t('storyTitle')}</h2>
                 <p className="text-white font-normal text-xs lg:text-base mt-7 max-w-5xl ">
-                    {p1.split("\n").map((item, index) =>
+                    {t('storyDescription').split("\n").map((item, index) =>
                         <span className="block" key={index}>{item}</span>
                     )}
                 </p>
@@ -105,7 +108,7 @@ const Story = () => {
                                                 <p className="text-start mt-2 font-normal text-xs lg:text-base lg:max-w-[366px] w-full">{item.describtion}</p>
                                                 {item.href ?
                                                     <Button onClick={() => handleGoTopic(item)} className={`mt-10 bg-[#00A1E9] text-white font-medium text-sm p-3 rounded-lg`}>
-                                                        READ MORE
+                                                        {commonT('readMore')}
                                                     </Button>
                                                     : <span className="pt-16 block"></span>}
                                             </div>
