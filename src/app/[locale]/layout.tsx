@@ -6,7 +6,7 @@ import "../globals.css";
 import Header from "@/shared-sections/Header";
 import Footer from "@/shared-sections/Footer";
 import GTMInitializer from "@/types/GTMInitializer";
-import TimezoneRedirect from "@/shared-components/TimezoneRedirect";
+// import TimezoneRedirect from "@/shared-components/TimezoneRedirect";
 
 import { NextIntlClientProvider, hasLocale } from 'next-intl';
 import { notFound } from 'next/navigation';
@@ -46,7 +46,7 @@ export default async function RootLayout({
         <NextIntlClientProvider locale={locale}>
           <Providers>
             <GTMInitializer />
-            <TimezoneRedirect />
+            {/* <TimezoneRedirect /> */}
             <Header />
             {children}
             <Footer />

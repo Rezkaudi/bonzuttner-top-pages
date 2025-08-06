@@ -25,7 +25,6 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     const staticUrls: MetadataRoute.Sitemap = [];
 
     routing.locales.forEach((locale) => {
-        console.log(locale)
         staticPages.forEach((page) => {
             const isHomePage = page === '';
             const url = isHomePage
